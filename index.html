@@ -1,208 +1,760 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head><!-- Google Tag Manager -->
+<head>
+  <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PR4D4JVG');</script>
 <!-- End Google Tag Manager -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sebastian Johansson | Growth Marketing</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sebastian Johansson — Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    /* ========================
+       CSS Variables (HSL palette)
+       ======================== */
+    :root{
+      /* Light mode */
+      --bg: hsl(0, 0%, 100%);
+      --text-primary: hsl(220, 15%, 15%);
+      --text-secondary: hsl(220, 10%, 45%);
+      --text-muted: hsl(220, 10%, 65%);
+      --primary: hsl(215, 85%, 35%);
+      --primary-light: hsl(215, 75%, 55%);
+      --accent: hsl(25, 85%, 55%);
+      --accent-light: hsl(25, 75%, 65%);
+      --surface: hsl(220, 15%, 98%);
+      --border: hsl(220, 15%, 90%);
+
+      --container-max: 1200px;
+      --radius: 0.75rem;
+      --btn-padding-y: 0.75rem;
+      --btn-padding-x: 1.5rem;
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --shadow-soft: 0 4px 16px -4px rgba(42, 86, 136, 0.1);
+      --shadow-medium: 0 8px 32px -8px rgba(42, 86, 136, 0.15);
     }
 
-    body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      background: #fdfdfd;
-      color: #111;
-      line-height: 1.6;
+    /* ========================
+       Base
+       ======================== */
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: var(--bg);
+      color: var(--text-primary);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      -webkit-text-size-adjust:100%;
+      scroll-behavior:smooth;
     }
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 60px;
+    a{color:inherit; text-decoration:none}
+    img{max-width:100%; display:block}
+
+    /* Container helper */
+    .container{
+      width: calc(100% - 2rem);
+      max-width: var(--container-max);
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    header h1 {
-      font-size: 22px;
-      font-weight: bold;
+    /* ========================
+       Header
+       ======================== */
+    header.site-header{
+      position: fixed;
+      left:0; right:0;
+      top:0;
+      z-index:80;
+      height:80px;
+      display:flex;
+      align-items:center;
+      transition: background var(--transition), backdrop-filter var(--transition), box-shadow var(--transition), border-bottom var(--transition);
+      background: transparent;
+      padding: 0 1rem;
     }
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 25px;
+    header.scrolled{
+      background: rgba(255,255,255,0.75); /* translucent */
+      backdrop-filter: blur(6px);
+      box-shadow: var(--shadow-soft);
+      border-bottom: 1px solid var(--border);
     }
 
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
+    .header-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      width:100%;
+      max-width:var(--container-max);
+      margin:0 auto;
     }
 
-    .hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 60px;
-      background: linear-gradient(to right, #fff, #f7f7f7);
+    .logo{
+      font-family:"Playfair Display", serif;
+      font-weight:600;
+      font-size:1.125rem;
+      color:var(--text-primary);
+      letter-spacing:0.2px;
     }
 
-    .hero-text {
-      flex: 1;
+    /* Nav */
+    nav.main-nav{
+      display:flex;
+      gap:1.25rem;
+      align-items:center;
     }
 
-    .hero-text h2 {
-      font-size: 28px;
-      color: #444;
-      font-style: italic;
+    nav.main-nav a{
+      font-weight:500;
+      color:var(--text-secondary);
+      padding:0.5rem 0.75rem;
+      border-radius:0.5rem;
+      transition: color var(--transition), background var(--transition);
+    }
+    nav.main-nav a:hover{
+      color:var(--text-primary);
+      background: rgba(33,33,33,0.03);
     }
 
-    .hero-text h1 {
-      font-size: 48px;
-      font-weight: bold;
-      margin: 10px 0;
+    /* CTA button in header */
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:0.5rem;
+      border-radius:var(--radius);
+      padding:var(--btn-padding-y) var(--btn-padding-x);
+      font-weight:600;
+      cursor:pointer;
+      transition: transform var(--transition), background var(--transition), color var(--transition);
     }
 
-    .hero-text p {
-      font-size: 18px;
-      color: #666;
-      max-width: 450px;
+    .btn-primary{
+      background: linear-gradient(180deg, var(--primary), var(--primary));
+      color: white;
+      border: none;
+      box-shadow: none;
+    }
+    .btn-primary:hover{ transform:translateY(-3px); filter:brightness(1.03) }
+
+    /* Mobile nav toggle */
+    .mobile-toggle{
+      display:none;
+      background:transparent;
+      border: none;
+      cursor:pointer;
+      padding:0.5rem;
+    }
+    .mobile-toggle svg{width:24px;height:24px;display:block}
+
+    /* ========================
+       Hero
+       ======================== */
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding-top:80px; /* header offset */
+      padding-bottom:4rem;
+      background: linear-gradient(180deg, var(--bg) 0%, var(--surface) 100%);
     }
 
-    .button {
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: #111;
-      color: #fff;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
+    .hero-inner{
+      width:100%;
+      max-width: 72rem; /* roughly 4xl */
+      padding:2rem;
+      text-align:center;
     }
 
-    .hero-img {
-      flex: 1;
-      text-align: right;
+    .eyebrow{
+      font-weight:500;
+      color:var(--text-muted);
+      margin-bottom:1rem;
+      font-size:0.95rem;
     }
 
-    .hero-img img {
-      width: 350px;
-      border-radius: 15px;
+    h1.hero-title{
+      font-family: "Playfair Display", serif;
+      margin:0;
+      font-size:clamp(2rem, 6vw, 4.5rem); /* responsive */
+      line-height:1.02;
+      letter-spacing:-0.5px;
+      color:var(--text-primary);
+      font-weight:700;
     }
 
-    section {
-      padding: 60px;
+    /* Gradient name effect for 'Johansson' */
+    .hero-title .surname{
+      background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display:inline-block;
     }
 
-    section h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
+    p.lead{
+      margin-top:1rem;
+      color:var(--text-secondary);
+      font-size:1.05rem;
+      max-width:60ch;
+      margin-left:auto;
+      margin-right:auto;
     }
 
-    .skills, .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
+    .hero-cta{
+      margin-top:2rem;
+      display:flex;
+      gap:1rem;
+      align-items:center;
+      justify-content:center;
+      flex-wrap:wrap;
     }
 
-    .card {
-      background: #fafafa;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+    .btn-outline{
+      background:transparent;
+      border:1.5px solid var(--border);
+      color:var(--text-primary);
+    }
+    .btn-outline:hover{
+      border-color: var(--primary);
+      transform:translateY(-3px);
     }
 
-    .card h3 {
-      margin-bottom: 10px;
+    /* Bouncing arrow */
+    .hero-arrow{
+      position: absolute;
+      left:50%;
+      transform:translateX(-50%);
+      bottom:1.25rem;
+      width:36px;
+      height:36px;
+      display:grid;
+      place-items:center;
+      opacity:0.95;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce{
+      0%{ transform: translateX(-50%) translateY(0) }
+      50%{ transform: translateX(-50%) translateY(10px) }
+      100%{ transform: translateX(-50%) translateY(0) }
     }
 
-    footer {
-      background: #111;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+    /* ========================
+       Sections common
+       ======================== */
+    section{
+      padding:6rem 0;
     }
+    .section-title{
+      text-align:center;
+      font-family:"Playfair Display", serif;
+      font-size:2.25rem;
+      margin:0 0 0.5rem 0;
+      color:var(--text-primary);
+      font-weight:600;
+    }
+    .section-desc{
+      text-align:center;
+      color:var(--text-secondary);
+      max-width:72ch;
+      margin:0.5rem auto 2rem auto;
+      font-size:1rem;
+    }
+
+    /* ========================
+       Portfolio
+       ======================== */
+    .portfolio{
+      background: var(--surface);
+    }
+
+    .portfolio-grid{
+      margin-top:2.5rem;
+      display:grid;
+      grid-template-columns: repeat(1,1fr);
+      gap:1.25rem;
+    }
+
+    .card{
+      background: transparent;
+      border-radius:var(--radius);
+      padding:1.5rem;
+      border:2px dashed var(--border);
+      min-height:12rem;
+      display:flex;
+      gap:1rem;
+      align-items:flex-start;
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    }
+
+    .card:hover{
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-medium);
+      border-color: var(--primary);
+    }
+
+    .card .icon{
+      min-width:48px;
+      min-height:48px;
+      display:grid;
+      place-items:center;
+      border-radius:0.5rem;
+    }
+    .card h3{
+      margin:0;
+      font-size:1.125rem;
+      color:var(--text-primary);
+      font-weight:600;
+    }
+    .card p{
+      margin:0.35rem 0 0 0;
+      color:var(--text-secondary);
+      font-size:0.95rem;
+    }
+
+    /* ========================
+       Contact
+       ======================== */
+    .contact{
+      background: var(--bg);
+    }
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:2rem;
+      align-items:start;
+      max-width:var(--container-max);
+      margin:0 auto;
+      width:calc(100% - 2rem);
+    }
+
+    .contact-info{
+      padding:1.25rem;
+      border-radius:var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.5));
+      border:1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .contact-info h3{ margin-top:0; font-family:"Playfair Display", serif; font-size:1.5rem }
+    .contact-info p{ color:var(--text-secondary) }
+
+    .contact-details{
+      margin-top:1rem;
+      color:var(--text-primary);
+      font-weight:600;
+      display:flex;
+      flex-direction:column;
+      gap:0.5rem;
+      font-size:0.95rem;
+    }
+
+    /* Form */
+    form.contact-form{
+      padding:1.25rem;
+      border-radius:var(--radius);
+      background: white;
+      border:1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .field{
+      margin-bottom:1rem;
+      display:flex;
+      flex-direction:column;
+      gap:0.35rem;
+    }
+
+    label{ font-size:0.9rem; color:var(--text-secondary) }
+
+    input[type="text"], input[type="email"], textarea{
+      font-family:inherit;
+      font-size:1rem;
+      padding:0.75rem 1rem;
+      border-radius:0.5rem;
+      border:1px solid var(--border);
+      background:transparent;
+      color:var(--text-primary);
+      transition: border var(--transition), box-shadow var(--transition);
+      outline:none;
+      min-height:44px;
+    }
+
+    textarea{ min-height:140px; resize:vertical; padding-top:0.9rem }
+
+    input:focus, textarea:focus{ border-color: var(--primary-light); box-shadow: var(--shadow-soft) }
+
+    input:invalid, textarea:invalid{
+      border-color: hsl(0, 85%, 55%); /* red-ish for invalid */
+    }
+
+    .form-actions{
+      display:flex;
+      justify-content:flex-end;
+      gap:1rem;
+      margin-top:0.5rem;
+    }
+
+    /* ========================
+       Footer
+       ======================== */
+    footer.site-footer{
+      background: var(--surface);
+      padding:2rem 0;
+      text-align:center;
+      color:var(--text-muted);
+    }
+
+    /* ========================
+       Responsive breakpoints
+       Mobile first -> sm md lg xl
+       ======================== */
+    @media (min-width: 640px){ /* sm */
+      .portfolio-grid{ grid-template-columns: repeat(1,1fr) }
+      .contact-grid{ grid-template-columns: 1fr 1fr }
+      .hero-inner{ padding:3rem }
+    }
+
+    @media (min-width: 768px){ /* md */
+      nav.main-nav{ gap:1.5rem }
+      .portfolio-grid{ grid-template-columns: repeat(2,1fr); }
+      .hero-inner{ padding:4rem }
+      .hero-title{ font-size:clamp(2.25rem, 5.8vw, 5rem) }
+      .mobile-toggle{ display:none }
+    }
+
+    @media (min-width: 1024px){ /* lg */
+      .portfolio-grid{ grid-template-columns: repeat(3,1fr); }
+      .mobile-toggle{ display:none }
+      nav.main-nav{ display:flex }
+      .hero-title{ font-size:clamp(3rem, 6.5vw, 6.5rem) }
+    }
+
+    @media (min-width: 1280px){ /* xl */
+      .hero-inner{ max-width: 84rem }
+    }
+
+    /* Mobile nav: hide main nav, show toggle */
+    @media (max-width: 1023px){
+      nav.main-nav{ display:none; }
+      .mobile-toggle{ display:block; }
+      .header-right{ display:flex; gap:0.5rem; align-items:center }
+    }
+
+    /* Mobile expanded nav */
+    .mobile-nav-drawer{
+      position: fixed;
+      left:0; right:0;
+      top:80px;
+      background: rgba(255,255,255,0.98);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+      padding:1rem;
+      transform: translateY(-10px);
+      opacity:0;
+      visibility:hidden;
+      transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
+      z-index:70;
+    }
+    .mobile-nav-drawer.open{
+      transform: translateY(0);
+      opacity:1;
+      visibility:visible;
+    }
+    .mobile-nav-drawer a{
+      display:block;
+      padding:0.75rem 0;
+      color:var(--text-primary);
+      font-weight:600;
+    }
+
+    /* Accessibility: focus outlines */
+    a:focus, button:focus, input:focus, textarea:focus{
+      outline:3px solid rgba(33,122,255,0.12);
+      outline-offset:2px;
+    }
+
   </style>
 </head>
 <body>
-  <!-- Header --><!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PR4D4JVG"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-  <header>
-    <h1>Sebastian.</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Works</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Header -->
+  <header class="site-header" id="siteHeader" role="banner">
+    <div class="header-inner container" >
+      <div class="logo" aria-label="Sebastian Johansson logo">Sebastian Johansson</div>
+
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-right" style="display:flex;align-items:center;gap:1rem">
+        <button class="btn btn-primary" id="headerContactBtn">Get in Touch</button>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-controls="mobileNav">
+          <!-- hamburger icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 7h18M3 12h18M3 17h18"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- mobile nav drawer -->
+    <div id="mobileNav" class="mobile-nav-drawer" aria-hidden="true">
+      <a href="#home" onclick="toggleMobileNav(false)">Home</a>
+      <a href="#portfolio" onclick="toggleMobileNav(false)">Portfolio</a>
+      <a href="#contact" onclick="toggleMobileNav(false)">Contact</a>
+      <a href="#contact" class="btn btn-primary" style="display:inline-block;margin-top:0.5rem;" onclick="toggleMobileNav(false)">Get in Touch</a>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Hey, there</h2>
-      <h1>I AM SEBASTIAN</h1>
-      <p>Student at the Growth Marketing program. Passionate about digital strategies, branding, and innovative marketing ideas that create real impact.</p>
-      <a href="#" class="button">Available for new opportunities</a>
-    </div>
-    <div class="hero-img">
-      <img src="your-photo.jpg" alt="Sebastian Johansson">
-    </div>
-  </section>
+  <main>
 
-  <!-- Projects Section -->
-  <section>
-    <h2>Recent Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Marketing Case Study</h3>
-        <p>Developed a campaign to increase engagement for a cultural brand through creative digital strategies.</p>
-      </div>
-      <div class="card">
-        <h3>Social Media Growth</h3>
-        <p>Designed and executed strategies to boost organic reach and build community engagement.</p>
-      </div>
-    </div>
-  </section>
+    <!-- HERO -->
+    <section id="home" class="hero" aria-labelledby="heroTitle">
+      <div class="hero-inner container">
+        <div class="eyebrow">Hello — I'm</div>
+        <h1 id="heroTitle" class="hero-title">
+          Sebastian <span class="surname">Johansson</span>
+        </h1>
+        <p class="lead">Growth Marketing student at Berghs School of Communication. I focus on data-driven marketing strategies, experimentation, and growth tactics that help brands scale with measurable outcomes.</p>
 
-  <!-- Skills Section -->
-  <section>
-    <h2>Experience & Skills</h2>
-    <div class="skills">
-      <div class="card">
-        <h3>Growth Marketing</h3>
-        <p>Segmentation, funnels, and data-driven strategies to drive growth.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#portfolio">View My Work</a>
+          <a class="btn btn-outline" href="#contact">Get in Touch</a>
+        </div>
       </div>
-      <div class="card">
-        <h3>Digital Strategy</h3>
-        <p>Brand positioning, content planning, and multichannel campaigns.</p>
-      </div>
-      <div class="card">
-        <h3>Project Management</h3>
-        <p>Team collaboration, agile methods, and structured planning.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Sebastian Johansson. Built with ❤️ for GitHub Pages.</p>
+      <a class="hero-arrow" href="#portfolio" aria-label="Scroll to portfolio">
+        <!-- down chevron -->
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--text-primary)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 9l6 6 6-6"></path>
+        </svg>
+      </a>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio" aria-labelledby="portfolioTitle">
+      <div class="container">
+        <h2 id="portfolioTitle" class="section-title">My Portfolio</h2>
+        <p class="section-desc">I’m currently building out case studies and projects that showcase growth marketing strategies and creative campaigns. Projects will be added here soon — check back later or contact me for collaborations.</p>
+
+        <div class="portfolio-grid" role="list" aria-label="Portfolio placeholders">
+          <!-- Card 1 -->
+          <article class="card" role="listitem" aria-labelledby="card1Title">
+            <div class="icon" aria-hidden="true">
+              <!-- Plus icon -->
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--text-primary)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M5 12h14"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 id="card1Title">Projects Coming Soon</h3>
+              <p>Placeholder for upcoming work. You'll be able to add projects to this space with images, descriptions and case details.</p>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card" role="listitem" aria-labelledby="card2Title">
+            <div class="icon" aria-hidden="true">
+              <!-- Briefcase icon -->
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--text-primary)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="12" rx="2"></rect>
+                <path d="M16 7V6a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v1"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 id="card2Title">Growth Marketing Projects</h3>
+              <p>Examples of growth experiments, funnel optimisation and data-driven campaigns — coming soon.</p>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card" role="listitem" aria-labelledby="card3Title">
+            <div class="icon" aria-hidden="true">
+              <!-- Plus icon (duplicate intentionally as requested) -->
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--text-primary)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M5 12h14"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 id="card3Title">Creative Campaigns</h3>
+              <p>Creative and strategic campaign outlines and their outcomes — placeholders until I add real work.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <h2 id="contactTitle" class="section-title">Contact</h2>
+        <p class="section-desc">Want to collaborate, ask about my work, or hire me? Use the form or send an email directly.</p>
+
+        <div class="contact-grid">
+          <!-- Left: info -->
+          <div class="contact-info" aria-hidden="false">
+            <h3>Get in touch</h3>
+            <p>I’m Sebastian Johansson, a 22-year-old Growth Marketing student at Berghs School of Communication. I’m open to internships, freelance projects, and collaborations.</p>
+
+            <div class="contact-details" aria-label="Contact details">
+              <div>Email: <a href="mailto:sebastian.johansson@student.berghs.se">sebastian.johansson@student.berghs.se</a></div>
+              <div>Program: Growth Marketing — Berghs School of Communication</div>
+              <div>Age: 22</div>
+            </div>
+          </div>
+
+          <!-- Right: form -->
+          <form id="contactForm" class="contact-form" novalidate aria-label="Contact form">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="Subject" required />
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary" id="sendBtn">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div style="margin-bottom:0.5rem">&copy; <span id="year"></span> Sebastian Johansson</div>
+      <div style="font-size:0.9rem; color:var(--text-muted)">Socials: (placeholders) — LinkedIn · Instagram · Twitter</div>
+    </div>
   </footer>
+
+  <script>
+    // Populate year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Header scroll behaviour
+    const header = document.getElementById('siteHeader');
+    const scrollThreshold = 40;
+    function handleScroll(){
+      if(window.scrollY > scrollThreshold) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    }
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, {passive:true});
+
+    // Mobile nav toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    mobileToggle && mobileToggle.addEventListener('click', function(){
+      const isOpen = mobileNav.classList.toggle('open');
+      mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      mobileNav.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+    });
+
+    function toggleMobileNav(open){
+      if(open) mobileNav.classList.add('open');
+      else mobileNav.classList.remove('open');
+      mobileToggle && mobileToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    // Header CTA scroll to contact
+    document.getElementById('headerContactBtn').addEventListener('click', function(){
+      document.querySelector('#contact').scrollIntoView({behavior:'smooth'});
+    });
+
+    // Smooth scroll polyfill handled by CSS scroll-behavior for modern browsers.
+    // But let's ensure anchor links behave smoothly
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const targetId = this.getAttribute('href').slice(1);
+        if(!targetId) return;
+        const el = document.getElementById(targetId);
+        if(el){
+          e.preventDefault();
+          el.scrollIntoView({behavior:'smooth'});
+          // close mobile nav if open
+          if(mobileNav.classList.contains('open')){
+            toggleMobileNav(false);
+          }
+        }
+      });
+    });
+
+    // Contact form: build mailto and open mail client
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      // Basic validity check
+      if(!contactForm.checkValidity()){
+        // Let browser display validation UI
+        contactForm.reportValidity();
+        return;
+      }
+
+      const name = encodeURIComponent(document.getElementById('name').value.trim());
+      const email = encodeURIComponent(document.getElementById('email').value.trim());
+      const subject = encodeURIComponent(document.getElementById('subject').value.trim() || 'Contact from portfolio site');
+      const message = encodeURIComponent(document.getElementById('message').value.trim());
+
+      // Construct mailto body
+      const to = 'sebastian.johansson@student.berghs.se';
+      const bodyLines = [
+        'Name: ' + decodeURIComponent(name),
+        'Email: ' + decodeURIComponent(email),
+        '',
+        'Message:',
+        decodeURIComponent(message)
+      ];
+      const mailto = `mailto:${to}?subject=${subject}&body=${encodeURIComponent(bodyLines.join('\\n'))}`;
+
+      // Open mail client
+      window.location.href = mailto;
+    });
+
+    // Improve keyboard accessibility: close mobile nav on ESC
+    window.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && mobileNav.classList.contains('open')){
+        toggleMobileNav(false);
+      }
+    });
+  </script>
+
 </body>
 </html>
