@@ -344,7 +344,7 @@ const ProjectDetail = () => {
 
                     {/* Resultat/Tanke */}
                     <div className="bg-card border border-border p-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat &amp; Lärdomar</span>
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat & Lärdomar</span>
                       <h3 className="font-display text-2xl text-foreground mb-4">Stärkt kundlojalitet genom bättre UX</h3>
                       <p className="text-muted-foreground font-body leading-relaxed">
                         Designen uppdaterades för att bättre matcha varumärket och ge ett mer sammanhållet 
@@ -366,7 +366,6 @@ const ProjectDetail = () => {
 
                     {/* Brief */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Utmaning</span>
                       <p className="text-xl text-foreground font-body leading-relaxed">
                         Uppgiften var att ta fram ett koncept som stärker Fotografiskas relevans och varumärke 
                         hos framtida målgrupper genom ökat engagemang, inkludering och långsiktiga relationer. 
@@ -455,7 +454,7 @@ const ProjectDetail = () => {
 
                     {/* Resultat */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat &amp; Lärdomar</span>
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat & Lärdomar</span>
                       <h3 className="font-display text-2xl text-foreground mb-4">Konstprojekt som varumärkesstrategi</h3>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>
@@ -483,7 +482,6 @@ const ProjectDetail = () => {
 
                     {/* Brief */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Utmaning</span>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p className="text-xl text-foreground">
                           I detta case arbetade jag med DryPop som extern uppdragsgivare för att planera, 
@@ -596,7 +594,7 @@ const ProjectDetail = () => {
 
                     {/* Resultat */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat &amp; Lärdomar</span>
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat & Lärdomar</span>
                       <h3 className="font-display text-2xl text-foreground mb-4">Data som styrde kreativ riktning</h3>
                       <ul className="space-y-3 text-muted-foreground font-body leading-relaxed">
                         <li className="flex items-start gap-3">
@@ -673,7 +671,6 @@ const ProjectDetail = () => {
 
                     {/* Brief */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Utmaning</span>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p className="text-xl text-foreground">
                           Inom ramen för kursen Business Unusual fick vi uppdraget att koppla ett etablerat, 
@@ -732,7 +729,7 @@ const ProjectDetail = () => {
 
                     {/* Strategi / Lösning */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Strategi / Lösning</span>
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Lösning</span>
                       <h3 className="font-display text-2xl text-foreground mb-4">Från energisnack till social katalysator</h3>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>
@@ -832,7 +829,7 @@ const ProjectDetail = () => {
 
                     {/* Resultat / Insikter */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat / Insikter</span>
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat & Lärdomar</span>
                       <h3 className="font-display text-2xl text-foreground mb-4">Ett varumärke som äger ett beteende</h3>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>
