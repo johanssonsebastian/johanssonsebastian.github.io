@@ -677,8 +677,8 @@ const ProjectDetail = () => {
                           </li>
                         </ul>
                         <p className="text-foreground italic mt-4">
-                          Ett tydligt exempel på hur jag närmar mig growth marketing i praktiken – 
-                          med fokus på test, lärande och skalbar effekt.
+                          Ett tydligt exempel på hur jag närmar mig growth marketing i praktiken: testa, 
+                          lära och skala det som bevisat fungerar.
                         </p>
                       </div>
                     </div>
