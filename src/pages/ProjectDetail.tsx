@@ -783,7 +783,7 @@ const ProjectDetail = () => {
                         </ul>
                         <p className="mt-4">
                           Kopplingen till <strong className="text-foreground">Business Unusual</strong> är tydlig: en godisproducent tar oväntat samhällsansvar. 
-                          Kopplingen till <strong className="text-foreground">Public Health & Welfare</strong> är forskningsgrundad – fysisk närhet minskar stress, 
+                          Kopplingen till <strong className="text-foreground">Public Health &amp; Welfare</strong> är forskningsgrundad. Fysisk närhet minskar stress, 
                           stärker immunförsvaret och fungerar som skyddsfaktor för psykisk ohälsa.
                         </p>
                       </div>
