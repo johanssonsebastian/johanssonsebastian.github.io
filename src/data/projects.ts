@@ -129,7 +129,7 @@ export const personalInfo = {
   title: "Growth marketer",
   school: "Berghs School of Communication",
   email: "sebastian.johansson@student.berghs.se",
-  linkedin: "https://www.linkedin.com/in/dittnamn",
+  linkedin: "https://www.linkedin.com/in/sebastian-johansson-3941a3385?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
   cvUrl: "/cv-sebastian-johansson.pdf",
   bio: "Jag är growth marketer, nyexaminerad från Berghs School of Communication, med ett starkt driv att skapa trafik som faktiskt genererar mätbara resultat. Jag brinner för att förstå hela tillväxtresan – från första klick till långsiktig kundrelation – och motiveras av att testa, analysera och optimera det som verkligen gör skillnad.",
   bioClosing:
