@@ -806,19 +806,19 @@ const ProjectDetail = () => {
                           <ul className="space-y-3">
                             <li className="flex items-start gap-3">
                               <span className="text-primary mt-2">1.</span>
-                              <span><strong className="text-foreground">TikTok-serie</strong> – Creators testar klassiska raggningsrepliker IRL och dokumenterar genuina reaktioner</span>
+                              <span><strong className="text-foreground">TikTok-serie</strong>: creators testar klassiska raggningsrepliker IRL och dokumenterar genuina reaktioner</span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="text-primary mt-2">2.</span>
-                              <span><strong className="text-foreground">OOH-kampanj</strong> – 90-talsestetik på affischer i barer, caféer och flygplatser</span>
+                              <span><strong className="text-foreground">OOH-kampanj</strong>: 90-talsestetik på affischer i barer, caféer och flygplatser</span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="text-primary mt-2">3.</span>
-                              <span><strong className="text-foreground">Produktaktivering</strong> – Limited edition-förpackningar i retrodesign placerade i sociala miljöer. Varje förpackning innehåller komplimang, raggningsreplik och kontaktfält</span>
+                              <span><strong className="text-foreground">Produktaktivering</strong>: limited edition-förpackningar i retrodesign placerade i sociala miljöer. Varje förpackning innehåller komplimang, raggningsreplik och kontaktfält</span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="text-primary mt-2">4.</span>
-                              <span><strong className="text-foreground">Retail-lansering</strong> – QR-kod till kampanjsida med tips och community-innehåll</span>
+                              <span><strong className="text-foreground">Retail-lansering</strong>: QR-kod till kampanjsida med tips och community-innehåll</span>
                             </li>
                           </ul>
                         </div>
