@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { personalInfo, skills, tools } from "@/data/projects";
-import { Download } from "lucide-react";
 
 const About = () => {
   return (
