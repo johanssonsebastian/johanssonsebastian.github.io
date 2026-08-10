@@ -62,7 +62,7 @@ const ProjectsGrid = () => {
       {/* Karusell – 1 kort mobil, 2 surfplatta, 3 desktop */}
       <div className="max-w-7xl mx-auto">
         <Carousel setApi={setApi} opts={{ align: "start", loop: true }}>
-          <CarouselContent className="-ml-8">
+          <CarouselContent className="-ml-8 items-stretch">
             {projects.map((project, index) => (
               <CarouselItem
                 key={project.id}
