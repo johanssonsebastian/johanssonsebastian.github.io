@@ -537,10 +537,10 @@ const ProjectDetail = () => {
                         Rätt kombination av målgrupp, format och tonalitet
                       </h3>
                       <p className="text-muted-foreground font-body leading-relaxed">
-                        Performance i paid social handlar inte om "bästa budskapet", utan om rätt kombination 
-                        av målgrupp, format och tonalitet. Analysen visade att olika målgrupper reagerar 
-                        fundamentalt olika på samma produkt – och att humor, autenticitet och formatval ofta 
-                        slår polerad reklam när kontexten är rätt.
+                        I paid social vinner sällan det snyggaste budskapet. Det som avgör är att målgrupp, 
+                        format och tonalitet träffar rätt tillsammans. Analysen visade att olika målgrupper 
+                        reagerar fundamentalt olika på samma produkt, och att humor och rätt formatval ofta 
+                        slår polerad reklam när kontexten stämmer.
                       </p>
                     </div>
 
