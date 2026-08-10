@@ -342,6 +342,15 @@ const ProjectDetail = () => {
                       </div>
                     </div>
 
+                    {/* Min roll */}
+                    <div className="bg-card border border-border p-8">
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Min roll</span>
+                      <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
+                        <p>Jag ansvarade för CRO-analysen och de datadrivna förslagen: kartläggning av kundresan efter köp, analys av friktion i medlemsflödet samt hypoteser och prioritering av de tester som skulle ge störst effekt på återköp.</p>
+                        <p className="text-foreground italic">Platshållartext – fyll gärna på med dina exakta ansvarsområden.</p>
+                      </div>
+                    </div>
+
                     {/* Resultat/Tanke */}
                     <div className="bg-card border border-border p-8">
                       <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat & Lärdomar</span>
@@ -450,6 +459,15 @@ const ProjectDetail = () => {
                           <span>Ett <strong className="text-foreground">inkluderande uttryck</strong> som breddar målgruppen och sänker trösklar</span>
                         </li>
                       </ul>
+                    </div>
+
+                    {/* Min roll */}
+                    <div className="bg-card border border-border p-8">
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Min roll</span>
+                      <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
+                        <p>Jag ansvarade för varumärkes- och growthstrategin i projektet: målgrupps- och insiktsarbete, hur konceptet skulle aktiveras i kanalerna samt hur engagemang och räckvidd skulle följas upp över tid.</p>
+                        <p className="text-foreground italic">Platshållartext – fyll gärna på med dina exakta ansvarsområden.</p>
+                      </div>
                     </div>
 
                     {/* Resultat */}
@@ -590,6 +608,15 @@ const ProjectDetail = () => {
                           <span><strong className="text-foreground">Analys som grund</strong> för skalning och optimering</span>
                         </li>
                       </ul>
+                    </div>
+
+                    {/* Min roll */}
+                    <div className="bg-card border border-border p-8">
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Min roll</span>
+                      <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
+                        <p>Jag ansvarade för hela paid social-processen: målgruppsanalys, kreativ utveckling, kampanjuppsättning i Meta, A/B-testning samt analys och löpande optimering.</p>
+                        <p className="text-foreground italic">Platshållartext – fyll gärna på med dina exakta ansvarsområden.</p>
+                      </div>
                     </div>
 
                     {/* Resultat */}
@@ -825,6 +852,15 @@ const ProjectDetail = () => {
                           <span><strong className="text-foreground">Långsiktig påverkan</strong> – Bidrag till folkhälsa genom mänsklig närhet</span>
                         </li>
                       </ul>
+                    </div>
+
+                    {/* Min roll */}
+                    <div className="bg-card border border-border p-8">
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Min roll</span>
+                      <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
+                        <p>Jag ansvarade för strategi och beteendedesign: insiktsarbete, målgruppsanalys samt hur konceptet skulle aktiveras och mätas.</p>
+                        <p className="text-foreground italic">Platshållartext – fyll gärna på med dina exakta ansvarsområden.</p>
+                      </div>
                     </div>
 
                     {/* Resultat / Insikter */}
