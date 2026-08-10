@@ -702,10 +702,11 @@ const ProjectDetail = () => {
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p className="text-xl text-foreground">
                           Inom ramen för kursen Business Unusual fick vi uppdraget att koppla ett etablerat, 
-                          oväntat varumärke till ett samhällsproblem och skapa verkligt värde – inte bara kommunikation.
+                          oväntat varumärke till ett samhällsproblem och skapa verklig nytta för människor, 
+                          inte enbart en reklamkampanj.
                         </p>
                         <p>
-                          Vi tilldelades Cloetta Kexchoklad och kategorin Public Health & Welfare – en till synes 
+                          Vi tilldelades Cloetta Kexchoklad och kategorin Public Health &amp; Welfare. En till synes 
                           osannolik kombination som krävde en kreativ brygga mellan vardagsgodis och samhällsnytta.
                         </p>
                         <p className="text-foreground italic">
