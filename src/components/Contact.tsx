@@ -1,73 +1,63 @@
 import { motion } from "framer-motion";
 import { personalInfo } from "@/data/projects";
-import { Mail, ArrowUpRight } from "lucide-react";
+import { Mail, ArrowUpRight, Linkedin } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-32 px-6 md:px-12 lg:px-24 relative overflow-hidden">
+    <section
+      id="contact"
+      className="scroll-mt-28 relative overflow-hidden px-6 md:px-12 lg:px-24 py-20 md:py-24 flex items-center min-h-[auto] md:max-h-[60vh]"
+    >
       {/* Background decoration */}
       <div className="absolute inset-0 pointer-events-none">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 0.05 }}
-          viewport={{ once: true }}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] max-w-[1000px] max-h-[1000px] border border-primary rounded-full"
-        />
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 0.03 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vw] max-w-[800px] max-h-[800px] border border-primary rounded-full"
-        />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] h-[70vw] max-w-[700px] max-h-[700px] border border-primary rounded-full opacity-[0.05]" />
       </div>
 
-      <div className="max-w-5xl mx-auto text-center relative z-10">
+      <div className="max-w-3xl mx-auto text-center relative z-10 w-full">
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.12 }}
+          transition={{ duration: 0.45, ease: "easeOut" }}
         >
-          <div className="flex items-center justify-center gap-4 mb-8">
-            <div className="w-16 h-px bg-primary" />
-            <span className="text-primary font-body text-xs tracking-[0.3em] uppercase">
-              Kontakt
-            </span>
-            <div className="w-16 h-px bg-primary" />
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <div className="w-12 h-px bg-primary" />
+            <span className="text-primary font-body text-xs tracking-[0.3em] uppercase">Kontakt</span>
+            <div className="w-12 h-px bg-primary" />
           </div>
-        </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex flex-col sm:flex-row gap-6 justify-center items-center"
-        >
-          <motion.a
-            href={`mailto:${personalInfo.email}`}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="group inline-flex items-center gap-4 bg-primary text-primary-foreground px-10 py-5 font-body font-medium tracking-wide transition-all hover:shadow-xl hover:shadow-primary/20"
-          >
-            <Mail className="w-5 h-5" />
-            Skicka ett mail
-            <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-          </motion.a>
-        </motion.div>
+          <h2 className="font-display text-4xl md:text-5xl font-medium text-foreground tracking-tight leading-[1.1] pb-1 mb-5">
+            Ska vi jobba ihop?
+          </h2>
 
-        {/* Email display */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-20"
-        >
-          <a 
+          <p className="text-muted-foreground font-body text-base md:text-lg leading-relaxed max-w-xl mx-auto mb-10">
+            Jag söker just nu min första roll inom growth marketing – hör av dig så berättar jag mer.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href={`mailto:${personalInfo.email}`}
+              className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 min-h-[44px] font-body font-medium tracking-wide transition-all hover:shadow-xl hover:shadow-primary/20"
+            >
+              <Mail className="w-5 h-5" />
+              Kontakta mig
+              <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+            </a>
+
+            <a
+              href={personalInfo.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 border border-border text-foreground px-8 py-4 min-h-[44px] font-body tracking-wide transition-colors hover:border-primary hover:text-primary"
+            >
+              <Linkedin className="w-5 h-5" />
+              LinkedIn
+            </a>
+          </div>
+
+          <a
             href={`mailto:${personalInfo.email}`}
-            className="font-display text-base sm:text-xl md:text-3xl text-muted-foreground hover:text-primary transition-colors break-all sm:break-normal"
+            className="mt-8 inline-block font-display text-base sm:text-xl md:text-2xl text-foreground hover:text-primary transition-colors break-all sm:break-normal"
           >
             {personalInfo.email}
           </a>
