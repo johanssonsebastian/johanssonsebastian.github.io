@@ -2,7 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { projects, personalInfo, getProject } from "@/data/projects";
 import useDocumentTitle from "@/hooks/useDocumentTitle";
-import { ArrowLeft, ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
 import fotografiskaSlide1 from "@/assets/fotografiska-slide-1.jpg";
 import fotografiskaSlide2 from "@/assets/fotografiska-slide-2.jpg";
@@ -40,12 +40,12 @@ const sustainableSlides: Array<{ type: 'video' | 'image'; src: string }> = [
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 const ProjectDetail = () => {
-  useDocumentTitle("Case");
   const { id } = useParams();
   const [currentSlide, setCurrentSlide] = useState(0);
   const project = getProject(id);
   const projectIndex = project ? projects.findIndex(p => p.id === project.id) : -1;
   const nextProject = projectIndex >= 0 ? projects[(projectIndex + 1) % projects.length] : undefined;
+  useDocumentTitle(project ? `${project.title} — Sebastian Johansson` : "Projekt — Sebastian Johansson", project?.description);
 
   // Scroll to top when page loads
   useEffect(() => {
@@ -1068,6 +1068,18 @@ const ProjectDetail = () => {
                       </div>
                     </div>
 
+                    {/* Resultat & Lärdomar */}
+                    <div className="border-l-2 border-primary pl-8">
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat & Lärdomar</span>
+                      <h2 className="font-display text-2xl text-foreground mb-4">Ett koncept som gör teknik igenkännbart</h2>
+                      <p className="text-muted-foreground font-body leading-relaxed">
+                        Konceptet flyttar fokus från programmets innehåll till elevens självbild – och gör
+                        teknikprogrammet till en plats där idéer faktiskt blir av. Lärdomen: när valet styrs av
+                        identitet räcker det inte att beskriva utbildningen, den måste kännas igen.
+                      </p>
+                    </div>
+
+
                   </div>
                 )}
 
@@ -1079,6 +1091,24 @@ const ProjectDetail = () => {
                     </p>
                   </div>
                 )}
+
+                {/* Så skulle framgång mätas */}
+                {project.kpis && project.kpis.length > 0 && (
+                  <div className="mt-12 border border-primary/40 p-8">
+                    <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-4 block">
+                      Så skulle framgång mätas
+                    </span>
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      {project.kpis.map((kpi) => (
+                        <li key={kpi} className="flex items-start gap-3 text-muted-foreground font-body">
+                          <span className="text-primary mt-1">→</span>
+                          <span>{kpi}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
               </motion.div>
 
               {/* Sidebar */}
@@ -1092,8 +1122,8 @@ const ProjectDetail = () => {
               duration: 0.8,
               delay: 0.4
             }} className="lg:col-span-4">
-                <div className="bg-card border border-border p-8 sticky top-32">
-                  <a href={`mailto:${personalInfo.email}`} className="group flex items-center justify-between text-primary hover:text-foreground transition-colors">
+                <div className="bg-card border border-border p-8 lg:sticky lg:top-32">
+                  <a href={`mailto:${personalInfo.email}`} className="group flex items-center justify-between gap-4 min-h-[44px] text-primary hover:text-foreground transition-colors">
                     <span className="font-body text-sm tracking-wider uppercase">Diskutera projektet</span>
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                   </a>
@@ -1102,6 +1132,30 @@ const ProjectDetail = () => {
             </div>
           </div>
         </div>
+
+        {/* Nästa projekt */}
+        {nextProject && (
+          <div className="px-6 md:px-12 lg:px-24 mt-20">
+            <div className="max-w-7xl mx-auto border-t border-border pt-10">
+              <Link
+                to={`/projekt/${nextProject.slug}`}
+                className="group flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+              >
+                <div>
+                  <span className="text-primary font-body text-xs tracking-[0.3em] uppercase block mb-2">
+                    Nästa projekt
+                  </span>
+                  <span className="font-display text-3xl md:text-4xl text-foreground group-hover:text-primary transition-colors">
+                    {nextProject.title}
+                  </span>
+                </div>
+                <span className="inline-flex items-center gap-2 min-h-[44px] text-primary font-body text-sm tracking-wider uppercase">
+                  Nästa projekt <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </Link>
+            </div>
+          </div>
+        )}
       </main>
 
       <Footer />
