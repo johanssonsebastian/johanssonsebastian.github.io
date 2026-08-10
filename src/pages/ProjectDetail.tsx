@@ -288,7 +288,7 @@ const ProjectDetail = () => {
                       <p className="text-xl text-foreground font-body leading-relaxed">
                         I detta case analyserade vi Under Your Skins webbplats med målet att identifiera 
                         vilka förändringar som kan driva fler återkommande kunder. Arbetet utgick från att 
-                        följa hela kundresan – från köp till tiden efter leverans – för att förstå var 
+                        följa hela kundresan, från köp till tiden efter leverans, för att förstå var 
                         lojaliteten tappas.
                       </p>
                     </div>
@@ -323,20 +323,20 @@ const ProjectDetail = () => {
                         <p>
                           Vi skapade en fungerande demohemsida där vi fokuserade på att vidareutveckla 
                           företagets befintliga medlemsprogram. Strukturen och navigationen designades om 
-                          för att göra medlemsklubben tydligare, mer lättanvänd och mer motiverande.
+                          för att göra medlemsklubben tydligare och mer motiverande att stanna kvar i.
                         </p>
                         <ul className="space-y-3 ml-4">
                           <li className="flex items-start gap-3">
                             <span className="text-primary mt-2">•</span>
-                            <span><strong className="text-foreground">Belöningssystem</strong> – Visar hur långt kunden är från nästa belöning</span>
+                            <span><strong className="text-foreground">Belöningssystem</strong>: visar hur långt kunden är från nästa belöning</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-primary mt-2">•</span>
-                            <span><strong className="text-foreground">Medlemsnivåer</strong> – Brons, silver och guld för långsiktigt engagemang</span>
+                            <span><strong className="text-foreground">Medlemsnivåer</strong>: brons, silver och guld för långsiktigt engagemang</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-primary mt-2">•</span>
-                            <span><strong className="text-foreground">Påfyllningspåminnelser</strong> – Automatiska påminnelser när det är dags att fylla på produkter</span>
+                            <span><strong className="text-foreground">Påfyllningspåminnelser</strong>: automatiska påminnelser när det är dags att fylla på produkter</span>
                           </li>
                         </ul>
                       </div>
@@ -347,7 +347,7 @@ const ProjectDetail = () => {
                       <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Min roll</span>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>Jag ansvarade för CRO-analysen och de datadrivna förslagen: kartläggning av kundresan efter köp, analys av friktion i medlemsflödet samt hypoteser och prioritering av de tester som skulle ge störst effekt på återköp.</p>
-                        <p className="text-foreground italic">Platshållartext – fyll gärna på med dina exakta ansvarsområden.</p>
+                        <p className="text-foreground italic">Platshållartext: fyll gärna på med dina exakta ansvarsområden.</p>
                       </div>
                     </div>
 
@@ -357,8 +357,9 @@ const ProjectDetail = () => {
                       <h3 className="font-display text-2xl text-foreground mb-4">Stärkt kundlojalitet genom bättre UX</h3>
                       <p className="text-muted-foreground font-body leading-relaxed">
                         Designen uppdaterades för att bättre matcha varumärket och ge ett mer sammanhållet 
-                        intryck. Genom förbättrad användarupplevelse, tydlig progression och smarta 
-                        påminnelser skapade vi en lösning som underlättar återköp och bygger långsiktig kundlojalitet.
+                        intryck. Med en tydligare progression i medlemsklubben och påminnelser som kommer 
+                        när produkten faktiskt är på väg att ta slut blir återköpet det enkla valet. 
+                        Lojalitet byggs i det lilla.
                       </p>
                     </div>
                   </div>
@@ -393,9 +394,9 @@ const ProjectDetail = () => {
                           traditionella museiformat riskerar att upplevas som dyra, otillgängliga och statiska?
                         </p>
                         <p>
-                          Unga vuxna är konstant uppkopplade – 74 % upplever stress kopplat till skärmtid – 
+                          Unga vuxna är konstant uppkopplade. 74 % upplever stress kopplat till skärmtid, 
                           samtidigt som omkring 60 % av unga (16–25) visar ett ökande intresse för kultur 
-                          när den är social, lärorik och medskapande. Trots detta väljs museer ofta bort.
+                          när den går att delta i tillsammans med andra. Trots detta väljs museer ofta bort.
                         </p>
                       </div>
                     </div>
@@ -406,10 +407,10 @@ const ProjectDetail = () => {
                       <h3 className="font-display text-2xl text-foreground mb-4">Kultur som identitet och tillhörighet</h3>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>
-                          För framtida publik handlar kultur mindre om passiv konsumtion och mer om identitet, 
-                          deltagande och tillhörighet. Unga vuxna som vår persona Lo (21) söker upplevelser 
-                          som hjälper dem logga ut, skapa mening och umgås – men museer upplevs ofta som 
-                          platser för "andra".
+                          För framtida publik handlar kultur mindre om passiv konsumtion och mer om att få 
+                          vara med och höra hemma någonstans. Unga vuxna som vår persona Lo (21) söker 
+                          upplevelser som hjälper dem logga ut och umgås på riktigt. Museer upplevs ofta 
+                          som platser för "andra".
                         </p>
                         <p>
                           Varumärken som bjuder in publiken som medskapare, snarare än betraktare, bygger 
@@ -424,16 +425,16 @@ const ProjectDetail = () => {
                       <h3 className="font-display text-2xl text-foreground mb-4">Dear Future Me</h3>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>
-                          Vi utvecklade <strong className="text-foreground">Dear Future Me</strong> – ett långsiktigt, 
-                          community-drivet konstprojekt där Fotografiska vid sitt 15-årsjubileum bjuder in unga 
+                          Vi utvecklade <strong className="text-foreground">Dear Future Me</strong>, ett långsiktigt 
+                          och community-drivet konstprojekt där Fotografiska vid sitt 15-årsjubileum bjuder in unga 
                           vuxna att dokumentera sin samtid med analoga engångskameror och personliga brev.
                         </p>
                         <p>
-                          Deltagarna får i uppdrag att berätta om sig själva i 36 bilder, lämnar in sitt material 
+                          Deltagarna får i uppdrag att berätta om sig själva i 36 bilder. Materialet lämnas in 
                           via dropboxar runt om i Stockholm, och Fotografiska förvaltar innehållet som en tidskapsel.
                         </p>
                         <p className="text-foreground italic">
-                          Efter 15 år öppnas kapseln i form av en jubileumsutställning – skapad av publiken själv.
+                          Efter 15 år öppnas kapseln i form av en jubileumsutställning, skapad av publiken själv.
                         </p>
                       </div>
                     </div>
@@ -466,7 +467,7 @@ const ProjectDetail = () => {
                       <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Min roll</span>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>Jag ansvarade för varumärkes- och growthstrategin i projektet: målgrupps- och insiktsarbete, hur konceptet skulle aktiveras i kanalerna samt hur engagemang och räckvidd skulle följas upp över tid.</p>
-                        <p className="text-foreground italic">Platshållartext – fyll gärna på med dina exakta ansvarsområden.</p>
+                        <p className="text-foreground italic">Platshållartext: fyll gärna på med dina exakta ansvarsområden.</p>
                       </div>
                     </div>
 
@@ -477,12 +478,12 @@ const ProjectDetail = () => {
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>
                           Konceptet fungerar som både konstprojekt och varumärkesstrategi. På kort sikt driver 
-                          det uppmärksamhet, engagemang och räckvidd kring jubileet. På lång sikt bygger det 
-                          community, publiklojalitet och ett starkt emotionellt band till Fotografiska.
+                          det uppmärksamhet och räckvidd kring jubileet. På lång sikt byggs ett community och 
+                          ett emotionellt band till Fotografiska som håller i flera år.
                         </p>
                         <p className="text-foreground italic">
-                          Caset visar hur kulturinstitutioner kan arbeta med growth och branding genom deltagande, 
-                          långsiktig storytelling och publiknära upplevelser – snarare än traditionell kampanjlogik.
+                          Caset visar hur kulturinstitutioner kan arbeta med growth och branding genom deltagande 
+                          och långsiktig storytelling, snarare än traditionell kampanjlogik.
                         </p>
                       </div>
                     </div>
@@ -523,9 +524,9 @@ const ProjectDetail = () => {
                         Hur kan DryPop skapa annonser som sticker ut i flödet?
                       </h3>
                       <p className="text-muted-foreground font-body leading-relaxed">
-                        Utmaningen låg i att identifiera rätt målgrupper, formulera budskap som adresserar 
-                        faktiska pain points och testa vilket kreativt innehåll som presterar bäst – utan 
-                        att kompromissa med varumärkets uttryck.
+                        Utmaningen låg i att identifiera rätt målgrupper och formulera budskap som adresserar 
+                        faktiska pain points. Sedan gällde det att testa vilket kreativt innehåll som presterar 
+                        bäst, utan att kompromissa med varumärkets uttryck.
                       </p>
                     </div>
 
@@ -536,10 +537,10 @@ const ProjectDetail = () => {
                         Rätt kombination av målgrupp, format och tonalitet
                       </h3>
                       <p className="text-muted-foreground font-body leading-relaxed">
-                        Performance i paid social handlar inte om "bästa budskapet", utan om rätt kombination 
-                        av målgrupp, format och tonalitet. Analysen visade att olika målgrupper reagerar 
-                        fundamentalt olika på samma produkt – och att humor, autenticitet och formatval ofta 
-                        slår polerad reklam när kontexten är rätt.
+                        I paid social vinner sällan det snyggaste budskapet. Det som avgör är att målgrupp, 
+                        format och tonalitet träffar rätt tillsammans. Analysen visade att olika målgrupper 
+                        reagerar fundamentalt olika på samma produkt, och att humor och rätt formatval ofta 
+                        slår polerad reklam när kontexten stämmer.
                       </p>
                     </div>
 
@@ -555,11 +556,11 @@ const ProjectDetail = () => {
                         <ul className="space-y-3 ml-4">
                           <li className="flex items-start gap-3">
                             <span className="text-primary mt-2">•</span>
-                            <span><strong className="text-foreground">Barnfamiljer</strong> – fokus på hälsa, enkelhet och vardagslösningar</span>
+                            <span><strong className="text-foreground">Barnfamiljer</strong>: fokus på hälsa, enkelhet och vardagslösningar</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-primary mt-2">•</span>
-                            <span><strong className="text-foreground">Friluftsmänniskor</strong> – fokus på funktion, packvänlighet och autenticitet</span>
+                            <span><strong className="text-foreground">Friluftsmänniskor</strong>: fokus på funktion, packvänlighet och autenticitet</span>
                           </li>
                         </ul>
                         <p>
@@ -615,7 +616,7 @@ const ProjectDetail = () => {
                       <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Min roll</span>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>Jag ansvarade för hela paid social-processen: målgruppsanalys, kreativ utveckling, kampanjuppsättning i Meta, A/B-testning samt analys och löpande optimering.</p>
-                        <p className="text-foreground italic">Platshållartext – fyll gärna på med dina exakta ansvarsområden.</p>
+                        <p className="text-foreground italic">Platshållartext: fyll gärna på med dina exakta ansvarsområden.</p>
                       </div>
                     </div>
 
@@ -676,8 +677,8 @@ const ProjectDetail = () => {
                           </li>
                         </ul>
                         <p className="text-foreground italic mt-4">
-                          Ett tydligt exempel på hur jag närmar mig growth marketing i praktiken – 
-                          med fokus på test, lärande och skalbar effekt.
+                          Ett tydligt exempel på hur jag närmar mig growth marketing i praktiken: testa, 
+                          lära och skala det som bevisat fungerar.
                         </p>
                       </div>
                     </div>
@@ -701,10 +702,11 @@ const ProjectDetail = () => {
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p className="text-xl text-foreground">
                           Inom ramen för kursen Business Unusual fick vi uppdraget att koppla ett etablerat, 
-                          oväntat varumärke till ett samhällsproblem och skapa verkligt värde – inte bara kommunikation.
+                          oväntat varumärke till ett samhällsproblem och skapa verklig nytta för människor, 
+                          inte enbart en reklamkampanj.
                         </p>
                         <p>
-                          Vi tilldelades Cloetta Kexchoklad och kategorin Public Health & Welfare – en till synes 
+                          Vi tilldelades Cloetta Kexchoklad och kategorin Public Health &amp; Welfare. En till synes 
                           osannolik kombination som krävde en kreativ brygga mellan vardagsgodis och samhällsnytta.
                         </p>
                         <p className="text-foreground italic">
@@ -723,9 +725,9 @@ const ProjectDetail = () => {
                           Samtidigt visar RFSU att nästan var fjärde svensk inte haft sex den senaste månaden.
                         </p>
                         <p>
-                          Unga vuxna vill träffas IRL – men saknar modet att ta första steget. Rädslan för avvisning, 
-                          pandemins sociala avvänjning och dating-apparnas uttröttande effekt har skapat en generation 
-                          som längtar efter närhet men inte vet hur de ska nå den.
+                          Unga vuxna vill träffas IRL, men modet att ta första steget saknas. Rädslan för 
+                          avvisning, pandemins sociala avvänjning och dating-apparnas uttröttande effekt har 
+                          skapat en generation som längtar efter närhet utan att veta hur den ska nås.
                         </p>
                       </div>
                     </div>
@@ -737,19 +739,19 @@ const ProjectDetail = () => {
                       <ul className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Vilja utan verktyg</strong> – Unga vuxna vill knyta relationer IRL men saknar modet och verktygen att ta första steget</span>
+                          <span><strong className="text-foreground">Vilja utan verktyg</strong>: unga vuxna vill knyta relationer IRL men saknar modet och verktygen att ta första steget</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Digital trötthet</strong> – Dating-appar skapar beroende men också utmattning; allt fler söker äkta, ofiltrerad kontakt</span>
+                          <span><strong className="text-foreground">Digital trötthet</strong>: dating-appar skapar beroende men också utmattning; allt fler söker äkta, ofiltrerad kontakt</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Rädslan dominerar</strong> – Avvisningsrädsla är den största barriären, inte brist på intresse</span>
+                          <span><strong className="text-foreground">Rädslan dominerar</strong>: avvisningsrädsla är den största barriären, inte brist på intresse</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Lek sänker tröskeln</strong> – Lekfulla, odramatiska verktyg gör det skrämmande hanterbart</span>
+                          <span><strong className="text-foreground">Lek sänker tröskeln</strong>: lekfulla, odramatiska verktyg gör det skrämmande hanterbart</span>
                         </li>
                       </ul>
                     </div>
@@ -760,9 +762,9 @@ const ProjectDetail = () => {
                       <h3 className="font-display text-2xl text-foreground mb-4">Från energisnack till social katalysator</h3>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>
-                          Vi transformerade mini-Kexchoklad från energisnack till social katalysator – ett konkret 
+                          Vi gjorde om mini-Kexchoklad från energisnack till social katalysator, ett konkret 
                           verktyg för att ta första steget. Genom att utnyttja den kulturella kopplingen till 
-                          raggningsrepliken "Tjena, kexet" skapade vi en trovärdig bro mellan varumärke och beteendeförändring.
+                          raggningsrepliken "Tjena, kexet" fick vi en trovärdig bro mellan varumärke och beteendeförändring.
                         </p>
                         <p className="text-foreground font-medium">Strategin vilar på tre pelare:</p>
                         <ul className="space-y-3 ml-4">
@@ -776,12 +778,12 @@ const ProjectDetail = () => {
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-primary mt-2">•</span>
-                            <span>Placera produkten där kontakt kan – men sällan sker</span>
+                            <span>Placera produkten där kontakt kan uppstå men sällan gör det</span>
                           </li>
                         </ul>
                         <p className="mt-4">
                           Kopplingen till <strong className="text-foreground">Business Unusual</strong> är tydlig: en godisproducent tar oväntat samhällsansvar. 
-                          Kopplingen till <strong className="text-foreground">Public Health & Welfare</strong> är forskningsgrundad – fysisk närhet minskar stress, 
+                          Kopplingen till <strong className="text-foreground">Public Health &amp; Welfare</strong> är forskningsgrundad. Fysisk närhet minskar stress, 
                           stärker immunförsvaret och fungerar som skyddsfaktor för psykisk ohälsa.
                         </p>
                       </div>
@@ -804,19 +806,19 @@ const ProjectDetail = () => {
                           <ul className="space-y-3">
                             <li className="flex items-start gap-3">
                               <span className="text-primary mt-2">1.</span>
-                              <span><strong className="text-foreground">TikTok-serie</strong> – Creators testar klassiska raggningsrepliker IRL och dokumenterar genuina reaktioner</span>
+                              <span><strong className="text-foreground">TikTok-serie</strong>: creators testar klassiska raggningsrepliker IRL och dokumenterar genuina reaktioner</span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="text-primary mt-2">2.</span>
-                              <span><strong className="text-foreground">OOH-kampanj</strong> – 90-talsestetik på affischer i barer, caféer och flygplatser</span>
+                              <span><strong className="text-foreground">OOH-kampanj</strong>: 90-talsestetik på affischer i barer, caféer och flygplatser</span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="text-primary mt-2">3.</span>
-                              <span><strong className="text-foreground">Produktaktivering</strong> – Limited edition-förpackningar i retrodesign placerade i sociala miljöer. Varje förpackning innehåller komplimang, raggningsreplik och kontaktfält</span>
+                              <span><strong className="text-foreground">Produktaktivering</strong>: limited edition-förpackningar i retrodesign placerade i sociala miljöer. Varje förpackning innehåller komplimang, raggningsreplik och kontaktfält</span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="text-primary mt-2">4.</span>
-                              <span><strong className="text-foreground">Retail-lansering</strong> – QR-kod till kampanjsida med tips och community-innehåll</span>
+                              <span><strong className="text-foreground">Retail-lansering</strong>: QR-kod till kampanjsida med tips och community-innehåll</span>
                             </li>
                           </ul>
                         </div>
@@ -829,27 +831,27 @@ const ProjectDetail = () => {
                       <ul className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Oväntat varumärkesansvar</strong> – Från godis till social katalysator</span>
+                          <span><strong className="text-foreground">Oväntat varumärkesansvar</strong>: från godis till social katalysator</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Beteendedesign</strong> – Verktyg som sänker tröskeln för handling</span>
+                          <span><strong className="text-foreground">Beteendedesign</strong>: verktyg som sänker tröskeln för handling</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Kulturell relevans</strong> – Nostalgisk estetik möter samtida problem</span>
+                          <span><strong className="text-foreground">Kulturell relevans</strong>: nostalgisk estetik möter samtida problem</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Flerkanalig aktivering</strong> – Digital inspiration → fysisk handling</span>
+                          <span><strong className="text-foreground">Flerkanalig aktivering</strong>: digital inspiration → fysisk handling</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Skalbarhet</strong> – Från pilot till samhällsrörelse</span>
+                          <span><strong className="text-foreground">Skalbarhet</strong>: från pilot till samhällsrörelse</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Långsiktig påverkan</strong> – Bidrag till folkhälsa genom mänsklig närhet</span>
+                          <span><strong className="text-foreground">Långsiktig påverkan</strong>: bidrag till folkhälsa genom mänsklig närhet</span>
                         </li>
                       </ul>
                     </div>
@@ -859,7 +861,7 @@ const ProjectDetail = () => {
                       <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Min roll</span>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>Jag ansvarade för strategi och beteendedesign: insiktsarbete, målgruppsanalys samt hur konceptet skulle aktiveras och mätas.</p>
-                        <p className="text-foreground italic">Platshållartext – fyll gärna på med dina exakta ansvarsområden.</p>
+                        <p className="text-foreground italic">Platshållartext: fyll gärna på med dina exakta ansvarsområden.</p>
                       </div>
                     </div>
 
@@ -869,7 +871,7 @@ const ProjectDetail = () => {
                       <h3 className="font-display text-2xl text-foreground mb-4">Ett varumärke som äger ett beteende</h3>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>
-                          Caset visar att ett godismärke kan äga ett beteende – inte bara ett smakögonblick. 
+                          Caset visar att ett godismärke kan äga ett beteende, inte bara ett smakögonblick. 
                           Genom att göra Kexchoklad till ett verktyg för första steget skapas en koppling 
                           mellan köptillfälle och social handling som går bortom traditionell reklam.
                         </p>
@@ -975,8 +977,8 @@ const ProjectDetail = () => {
                       </h2>
                       <p className="text-muted-foreground font-body leading-relaxed">
                         När vi pratade med högstadieelever handlade svaren nästan aldrig om utbildningen i sig. De
-                        handlade om självbild: "det där är inte jag". Det är där valet avgörs – långt innan någon
-                        läser en programbeskrivning.
+                        handlade om självbild: "det där är inte jag". Där avgörs valet, långt innan någon läser en
+                        programbeskrivning.
                       </p>
                     </div>
 
@@ -1005,8 +1007,8 @@ const ProjectDetail = () => {
                           tanke i mobilens utkast. De flesta av dem samlar damm.
                         </p>
                         <p>
-                          The Archive gör det osynliga synligt: ett arkiv av riktiga, ofärdiga idéer från unga –
-                          och NTI som platsen där de faktiskt kan byggas. Dammet står för potential, inte för
+                          The Archive gör det osynliga synligt: ett arkiv av riktiga, ofärdiga idéer från unga, med
+                          NTI som platsen där de faktiskt kan byggas. Dammet står för potential. Inte för
                           misslyckande.
                         </p>
                       </div>
@@ -1047,7 +1049,7 @@ const ProjectDetail = () => {
                       <p className="text-muted-foreground font-body leading-relaxed">
                         Konceptet lever i det fysiska rummet lika mycket som i flödet. En Archive Wall på
                         gymnasiemässan där besökare skriver ner en idé de aldrig gjort verklighet och lämnar den
-                        på väggen – och tar med sig tanken att den faktiskt går att bygga.
+                        på väggen. Med sig därifrån tar de tanken att den faktiskt går att bygga.
                       </p>
                     </div>
 
@@ -1073,9 +1075,9 @@ const ProjectDetail = () => {
                       <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat & Lärdomar</span>
                       <h2 className="font-display text-2xl text-foreground mb-4">Ett koncept som gör teknik igenkännbart</h2>
                       <p className="text-muted-foreground font-body leading-relaxed">
-                        Konceptet flyttar fokus från programmets innehåll till elevens självbild – och gör
-                        teknikprogrammet till en plats där idéer faktiskt blir av. Lärdomen: när valet styrs av
-                        identitet räcker det inte att beskriva utbildningen, den måste kännas igen.
+                        Konceptet flyttar fokus från programmets innehåll till elevens självbild och gör
+                        teknikprogrammet till en plats där idéer blir av. Lärdomen: när valet styrs av identitet
+                        räcker det inte att beskriva utbildningen. Den måste kännas igen.
                       </p>
                     </div>
 

@@ -35,7 +35,7 @@ export const projects: Project[] = [
     client: "NTI Gymnasiet",
     role: "Growth- & mediestrategi",
     description:
-      "Ett kommunikationskoncept som gör om bilden av teknikprogrammet – från något smalt och nördigt till något man kan känna igen sig i. Byggt kring en enkel tanke: de flesta idéer blir aldrig av.",
+      "Ett kommunikationskoncept som gör om bilden av teknikprogrammet: från något smalt och nördigt till något man kan känna igen sig i. Utgångspunkten var enkel. De flesta idéer blir aldrig av.",
     image: theArchive01,
     detailImage: theArchive01,
     year: "2026",
@@ -111,7 +111,7 @@ export const projects: Project[] = [
     client: "Kexchoklad",
     role: "Strategi & beteendedesign",
     description:
-      "När Kexchoklad blev ett verktyg mot ensamhet – ett strategiskt case om hur en godisprodukt kan bidra till folkhälsan.",
+      "När Kexchoklad blev ett verktyg mot ensamhet. Ett strategiskt case om hur en godisprodukt kan bidra till folkhälsan.",
     image: kexchokladCover,
     year: "2025",
     tags: ["Strategy", "Public Health", "Behavior Design"],
@@ -131,9 +131,9 @@ export const personalInfo = {
   email: "sebastian.johansson@student.berghs.se",
   linkedin: "https://www.linkedin.com/in/sebastian-johansson-3941a3385?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
   cvUrl: "/cv-sebastian-johansson.pdf",
-  bio: "Jag är growth marketer, nyexaminerad från Berghs School of Communication, med ett starkt driv att skapa trafik som faktiskt genererar mätbara resultat. Jag brinner för att förstå hela tillväxtresan – från första klick till långsiktig kundrelation – och motiveras av att testa, analysera och optimera det som verkligen gör skillnad.",
+  bio: "Jag är growth marketer, nyexaminerad från Berghs School of Communication, med ett starkt driv att skapa trafik som faktiskt genererar mätbara resultat. Jag brinner för att förstå hela tillväxtresan och motiveras av att testa, analysera och förbättra det som gör skillnad.",
   bioClosing:
-    "Nu söker jag min första roll inom growth eller performance marketing – där jag får testa, mäta och skala det som fungerar.",
+    "Nu söker jag min första roll inom growth eller performance marketing, en roll där jag får testa, mäta och skala det som fungerar.",
 };
 
 export const skills = [

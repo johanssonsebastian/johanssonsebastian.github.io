@@ -47,12 +47,12 @@ const Hero = () => {
               className="max-w-xl"
             >
               <p className="text-muted-foreground text-base md:text-lg font-body leading-relaxed">
-                {personalInfo.title} — nyexaminerad från{" "}
+                {personalInfo.title}, nyexaminerad från{" "}
                 <span className="text-foreground">{personalInfo.school}</span>
               </p>
               <p className="text-muted-foreground text-base md:text-lg font-body leading-relaxed mt-4">
-                Jag hjälper varumärken att växa med data, experiment och kreativitet — från första
-                klick till lojal kund.
+                Jag hjälper varumärken att växa med hjälp av data, experiment och kreativitet, hela
+                vägen från första klick till lojal kund.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-10">
