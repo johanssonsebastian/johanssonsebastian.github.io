@@ -1,8 +1,33 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { projects } from "@/data/projects";
 import ProjectCard from "./ProjectCard";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "@/components/ui/carousel";
 
 const ProjectsGrid = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [selected, setSelected] = useState(0);
+  const [snaps, setSnaps] = useState<number[]>([]);
+
+  useEffect(() => {
+    if (!api) return;
+    const onSelect = () => setSelected(api.selectedScrollSnap());
+    setSnaps(api.scrollSnapList());
+    onSelect();
+    api.on("select", onSelect);
+    api.on("reInit", () => {
+      setSnaps(api.scrollSnapList());
+      onSelect();
+    });
+  }, [api]);
+
   return (
     <section id="projects" className="scroll-mt-28 py-24 md:py-32 px-6 md:px-12 lg:px-24 relative">
       {/* Section header */}
@@ -34,14 +59,49 @@ const ProjectsGrid = () => {
         </motion.div>
       </div>
 
-      {/* Static grid – 1 kolumn mobil, 3 kolumner desktop */}
+      {/* Karusell – 1 kort mobil, 2 surfplatta, 3 desktop */}
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
-          {projects.map((project, index) => (
-            <ProjectCard key={project.id} project={project} index={index} />
-          ))}
-        </div>
+        <Carousel setApi={setApi} opts={{ align: "start", loop: true }}>
+          <CarouselContent className="-ml-8 items-stretch">
+            {projects.map((project, index) => (
+              <CarouselItem
+                key={project.id}
+                className="pl-8 basis-full md:basis-1/2 lg:basis-1/3"
+              >
+                <ProjectCard project={project} index={index} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+
+          <div className="flex items-center justify-between gap-6 mt-12">
+            <div className="flex items-center gap-3">
+              {snaps.map((_, i) => (
+                <button
+                  key={i}
+                  type="button"
+                  aria-label={`Gå till projekt ${i + 1}`}
+                  onClick={() => api?.scrollTo(i)}
+                  className="h-11 flex items-center group"
+                >
+                  <span
+                    className={`h-px transition-all duration-300 ${
+                      selected === i
+                        ? "w-10 bg-primary"
+                        : "w-5 bg-border group-hover:bg-primary/60"
+                    }`}
+                  />
+                </button>
+              ))}
+            </div>
+
+            <div className="flex items-center gap-3">
+              <CarouselPrevious className="static translate-y-0 h-11 w-11 rounded-none border-border/60 bg-transparent text-foreground hover:bg-primary/10 hover:text-primary" />
+              <CarouselNext className="static translate-y-0 h-11 w-11 rounded-none border-border/60 bg-transparent text-foreground hover:bg-primary/10 hover:text-primary" />
+            </div>
+          </div>
+        </Carousel>
       </div>
+
     </section>
   );
 };

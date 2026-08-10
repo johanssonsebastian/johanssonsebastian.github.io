@@ -15,8 +15,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
     >
       <motion.article
         initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.12 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: Math.min(index, 2) * 0.06, ease: "easeOut" }}
         className="group relative cursor-pointer h-full flex flex-col"
       >
