@@ -394,9 +394,9 @@ const ProjectDetail = () => {
                           traditionella museiformat riskerar att upplevas som dyra, otillgängliga och statiska?
                         </p>
                         <p>
-                          Unga vuxna är konstant uppkopplade – 74 % upplever stress kopplat till skärmtid – 
+                          Unga vuxna är konstant uppkopplade. 74 % upplever stress kopplat till skärmtid, 
                           samtidigt som omkring 60 % av unga (16–25) visar ett ökande intresse för kultur 
-                          när den är social, lärorik och medskapande. Trots detta väljs museer ofta bort.
+                          när den går att delta i tillsammans med andra. Trots detta väljs museer ofta bort.
                         </p>
                       </div>
                     </div>
