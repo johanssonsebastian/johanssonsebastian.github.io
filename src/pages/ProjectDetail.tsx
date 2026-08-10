@@ -407,10 +407,10 @@ const ProjectDetail = () => {
                       <h3 className="font-display text-2xl text-foreground mb-4">Kultur som identitet och tillhörighet</h3>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>
-                          För framtida publik handlar kultur mindre om passiv konsumtion och mer om identitet, 
-                          deltagande och tillhörighet. Unga vuxna som vår persona Lo (21) söker upplevelser 
-                          som hjälper dem logga ut, skapa mening och umgås – men museer upplevs ofta som 
-                          platser för "andra".
+                          För framtida publik handlar kultur mindre om passiv konsumtion och mer om att få 
+                          vara med och höra hemma någonstans. Unga vuxna som vår persona Lo (21) söker 
+                          upplevelser som hjälper dem logga ut och umgås på riktigt. Museer upplevs ofta 
+                          som platser för "andra".
                         </p>
                         <p>
                           Varumärken som bjuder in publiken som medskapare, snarare än betraktare, bygger 
