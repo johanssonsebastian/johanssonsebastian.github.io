@@ -347,7 +347,7 @@ const ProjectDetail = () => {
                       <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Min roll</span>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>Jag ansvarade för CRO-analysen och de datadrivna förslagen: kartläggning av kundresan efter köp, analys av friktion i medlemsflödet samt hypoteser och prioritering av de tester som skulle ge störst effekt på återköp.</p>
-                        <p className="text-foreground italic">Platshållartext – fyll gärna på med dina exakta ansvarsområden.</p>
+                        <p className="text-foreground italic">Platshållartext: fyll gärna på med dina exakta ansvarsområden.</p>
                       </div>
                     </div>
 
@@ -467,7 +467,7 @@ const ProjectDetail = () => {
                       <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Min roll</span>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>Jag ansvarade för varumärkes- och growthstrategin i projektet: målgrupps- och insiktsarbete, hur konceptet skulle aktiveras i kanalerna samt hur engagemang och räckvidd skulle följas upp över tid.</p>
-                        <p className="text-foreground italic">Platshållartext – fyll gärna på med dina exakta ansvarsområden.</p>
+                        <p className="text-foreground italic">Platshållartext: fyll gärna på med dina exakta ansvarsområden.</p>
                       </div>
                     </div>
 
@@ -616,7 +616,7 @@ const ProjectDetail = () => {
                       <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Min roll</span>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>Jag ansvarade för hela paid social-processen: målgruppsanalys, kreativ utveckling, kampanjuppsättning i Meta, A/B-testning samt analys och löpande optimering.</p>
-                        <p className="text-foreground italic">Platshållartext – fyll gärna på med dina exakta ansvarsområden.</p>
+                        <p className="text-foreground italic">Platshållartext: fyll gärna på med dina exakta ansvarsområden.</p>
                       </div>
                     </div>
 
