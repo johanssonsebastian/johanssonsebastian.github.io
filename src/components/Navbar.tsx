@@ -32,7 +32,7 @@ const Navbar = () => {
       >
         <div className="px-6 md:px-12 lg:px-24 flex items-center justify-between">
           {/* Logo */}
-          <a href="/" aria-label="Till startsidan" className="group flex items-center gap-3">
+          <a href="/" aria-label="Till startsidan" className="group inline-flex items-center gap-3 min-h-[44px]">
             <div className="w-10 h-10 border-2 border-primary flex items-center justify-center transition-all group-hover:bg-primary">
               <span className="font-display font-bold text-primary group-hover:text-primary-foreground transition-colors">
                 {personalInfo.name.split(" ").map((n) => n[0]).join("")}
@@ -46,7 +46,7 @@ const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="font-body text-sm tracking-wider uppercase text-muted-foreground hover:text-foreground transition-colors relative group"
+                className="font-body text-sm tracking-wider uppercase text-muted-foreground hover:text-foreground transition-colors relative group inline-flex items-center min-h-[44px]"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-primary transition-all duration-300 group-hover:w-full" />
@@ -57,7 +57,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center justify-center min-w-[44px] min-h-[44px]"
             >
               <Linkedin className="w-5 h-5" />
             </a>

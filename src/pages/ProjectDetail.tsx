@@ -69,7 +69,7 @@ const ProjectDetail = () => {
       <main className="pt-32 pb-24">
         {/* Back button */}
         <div className="px-6 md:px-12 lg:px-24 mb-12">
-          <Link to="/#projects" className="group inline-flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
+          <Link to="/#projects" className="group inline-flex items-center gap-3 min-h-[44px] text-muted-foreground hover:text-foreground transition-colors">
             <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
             <span className="font-body text-sm tracking-wider uppercase">Tillbaka till projekt</span>
           </Link>
