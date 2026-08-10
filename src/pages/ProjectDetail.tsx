@@ -288,7 +288,7 @@ const ProjectDetail = () => {
                       <p className="text-xl text-foreground font-body leading-relaxed">
                         I detta case analyserade vi Under Your Skins webbplats med målet att identifiera 
                         vilka förändringar som kan driva fler återkommande kunder. Arbetet utgick från att 
-                        följa hela kundresan – från köp till tiden efter leverans – för att förstå var 
+                        följa hela kundresan, från köp till tiden efter leverans, för att förstå var 
                         lojaliteten tappas.
                       </p>
                     </div>
