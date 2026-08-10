@@ -524,9 +524,9 @@ const ProjectDetail = () => {
                         Hur kan DryPop skapa annonser som sticker ut i flödet?
                       </h3>
                       <p className="text-muted-foreground font-body leading-relaxed">
-                        Utmaningen låg i att identifiera rätt målgrupper, formulera budskap som adresserar 
-                        faktiska pain points och testa vilket kreativt innehåll som presterar bäst – utan 
-                        att kompromissa med varumärkets uttryck.
+                        Utmaningen låg i att identifiera rätt målgrupper och formulera budskap som adresserar 
+                        faktiska pain points. Sedan gällde det att testa vilket kreativt innehåll som presterar 
+                        bäst, utan att kompromissa med varumärkets uttryck.
                       </p>
                     </div>
 
