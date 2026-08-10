@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { projects, personalInfo } from "@/data/projects";
+import { projects, personalInfo, getProject } from "@/data/projects";
+import useDocumentTitle from "@/hooks/useDocumentTitle";
 import { ArrowLeft, ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
 import fotografiskaSlide1 from "@/assets/fotografiska-slide-1.jpg";
@@ -39,13 +40,17 @@ const sustainableSlides: Array<{ type: 'video' | 'image'; src: string }> = [
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 const ProjectDetail = () => {
+  useDocumentTitle("Case");
   const { id } = useParams();
   const [currentSlide, setCurrentSlide] = useState(0);
-  const project = projects.find(p => p.id === id);
+  const project = getProject(id);
+  const projectIndex = project ? projects.findIndex(p => p.id === project.id) : -1;
+  const nextProject = projectIndex >= 0 ? projects[(projectIndex + 1) % projects.length] : undefined;
 
   // Scroll to top when page loads
   useEffect(() => {
     window.scrollTo(0, 0);
+    setCurrentSlide(0);
   }, [id]);
 
   if (!project) {
@@ -99,21 +104,14 @@ const ProjectDetail = () => {
                 </p>
               )}
 
-              {project.id === "5" ? (
-                <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-muted-foreground font-body text-sm">
-                  <span>NTI Gymnasiet</span>
-                  <span className="text-primary">·</span>
-                  <span>Berghs School of Communication</span>
-                  <span className="text-primary">·</span>
-                  <span>2026</span>
-                  <span className="text-primary">·</span>
-                  <span>Growth Marketing</span>
-                </div>
-              ) : (
-              <div className="flex items-center gap-8 text-muted-foreground font-body">
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-muted-foreground font-body text-sm">
+                <span>{project.client}</span>
+                <span className="text-primary">·</span>
                 <span>{project.year}</span>
-                <div className="w-px h-4 bg-border" />
+                <span className="text-primary">·</span>
                 <span>{project.category}</span>
+                <span className="text-primary">·</span>
+                <span>Min roll: {project.role}</span>
               </div>
               )}
             </motion.div>
@@ -297,7 +295,7 @@ const ProjectDetail = () => {
 
                     {/* Problem */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Problem</span>
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Utmaning</span>
                       <h3 className="font-display text-2xl text-foreground mb-4">Hur behåller vi kunder efter första köpet?</h3>
                       <p className="text-muted-foreground font-body leading-relaxed">
                         Under Your Skin hade en stark förstaintryck men tappade kunder över tid. 
@@ -346,7 +344,7 @@ const ProjectDetail = () => {
 
                     {/* Resultat/Tanke */}
                     <div className="bg-card border border-border p-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat</span>
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat &amp; Lärdomar</span>
                       <h3 className="font-display text-2xl text-foreground mb-4">Stärkt kundlojalitet genom bättre UX</h3>
                       <p className="text-muted-foreground font-body leading-relaxed">
                         Designen uppdaterades för att bättre matcha varumärket och ge ett mer sammanhållet 
@@ -368,7 +366,7 @@ const ProjectDetail = () => {
 
                     {/* Brief */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Brief</span>
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Utmaning</span>
                       <p className="text-xl text-foreground font-body leading-relaxed">
                         Uppgiften var att ta fram ett koncept som stärker Fotografiskas relevans och varumärke 
                         hos framtida målgrupper genom ökat engagemang, inkludering och långsiktiga relationer. 
@@ -457,7 +455,7 @@ const ProjectDetail = () => {
 
                     {/* Resultat */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat</span>
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat &amp; Lärdomar</span>
                       <h3 className="font-display text-2xl text-foreground mb-4">Konstprojekt som varumärkesstrategi</h3>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>
@@ -485,7 +483,7 @@ const ProjectDetail = () => {
 
                     {/* Brief */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Brief</span>
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Utmaning</span>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p className="text-xl text-foreground">
                           I detta case arbetade jag med DryPop som extern uppdragsgivare för att planera, 
@@ -598,7 +596,7 @@ const ProjectDetail = () => {
 
                     {/* Resultat */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat</span>
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat &amp; Lärdomar</span>
                       <h3 className="font-display text-2xl text-foreground mb-4">Data som styrde kreativ riktning</h3>
                       <ul className="space-y-3 text-muted-foreground font-body leading-relaxed">
                         <li className="flex items-start gap-3">
@@ -675,7 +673,7 @@ const ProjectDetail = () => {
 
                     {/* Brief */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Brief</span>
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Utmaning</span>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p className="text-xl text-foreground">
                           Inom ramen för kursen Business Unusual fick vi uppdraget att koppla ett etablerat, 
@@ -924,7 +922,7 @@ const ProjectDetail = () => {
                   <div className="space-y-12">
                     {/* Utmaningen */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Utmaningen</span>
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Utmaning</span>
                       <h2 className="font-display text-2xl text-foreground mb-4">
                         Teknikprogrammet har ett imageproblem. Inte ett kvalitetsproblem.
                       </h2>
@@ -938,7 +936,7 @@ const ProjectDetail = () => {
 
                     {/* Insikten */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Insikten</span>
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Insikt</span>
                       <h2 className="font-display text-2xl text-foreground mb-4">
                         Unga väljer inte ett program. De väljer en identitet.
                       </h2>
@@ -966,7 +964,7 @@ const ProjectDetail = () => {
 
                     {/* Konceptet */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Konceptet</span>
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Lösning — Konceptet</span>
                       <h2 className="font-display text-2xl text-foreground mb-4">The Archive</h2>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>
@@ -999,7 +997,7 @@ const ProjectDetail = () => {
 
                     {/* Uttryck */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Uttryck</span>
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Lösning — Uttryck</span>
                       <h2 className="font-display text-2xl text-foreground mb-4">
                         Ingen klassisk skolreklam. Det ska kännas som ett arkiv av riktiga idéer.
                       </h2>
@@ -1011,7 +1009,7 @@ const ProjectDetail = () => {
 
                     {/* Aktivering */}
                     <div className="border-l-2 border-primary pl-8">
-                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Aktivering</span>
+                      <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Lösning — Aktivering</span>
                       <h2 className="font-display text-2xl text-foreground mb-4">Archive Wall på gymnasiemässan</h2>
                       <p className="text-muted-foreground font-body leading-relaxed">
                         Konceptet lever i det fysiska rummet lika mycket som i flödet. En Archive Wall på
