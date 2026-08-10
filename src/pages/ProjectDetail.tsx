@@ -1049,7 +1049,7 @@ const ProjectDetail = () => {
                       <p className="text-muted-foreground font-body leading-relaxed">
                         Konceptet lever i det fysiska rummet lika mycket som i flödet. En Archive Wall på
                         gymnasiemässan där besökare skriver ner en idé de aldrig gjort verklighet och lämnar den
-                        på väggen – och tar med sig tanken att den faktiskt går att bygga.
+                        på väggen. Med sig därifrån tar de tanken att den faktiskt går att bygga.
                       </p>
                     </div>
 
