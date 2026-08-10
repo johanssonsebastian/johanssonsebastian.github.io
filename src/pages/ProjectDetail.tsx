@@ -560,7 +560,7 @@ const ProjectDetail = () => {
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-primary mt-2">•</span>
-                            <span><strong className="text-foreground">Friluftsmänniskor</strong> – fokus på funktion, packvänlighet och autenticitet</span>
+                            <span><strong className="text-foreground">Friluftsmänniskor</strong>: fokus på funktion, packvänlighet och autenticitet</span>
                           </li>
                         </ul>
                         <p>
