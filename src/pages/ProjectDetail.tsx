@@ -1075,9 +1075,9 @@ const ProjectDetail = () => {
                       <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Resultat & Lärdomar</span>
                       <h2 className="font-display text-2xl text-foreground mb-4">Ett koncept som gör teknik igenkännbart</h2>
                       <p className="text-muted-foreground font-body leading-relaxed">
-                        Konceptet flyttar fokus från programmets innehåll till elevens självbild – och gör
-                        teknikprogrammet till en plats där idéer faktiskt blir av. Lärdomen: när valet styrs av
-                        identitet räcker det inte att beskriva utbildningen, den måste kännas igen.
+                        Konceptet flyttar fokus från programmets innehåll till elevens självbild och gör
+                        teknikprogrammet till en plats där idéer blir av. Lärdomen: när valet styrs av identitet
+                        räcker det inte att beskriva utbildningen. Den måste kännas igen.
                       </p>
                     </div>
 
