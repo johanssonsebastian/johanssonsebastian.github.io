@@ -323,20 +323,20 @@ const ProjectDetail = () => {
                         <p>
                           Vi skapade en fungerande demohemsida där vi fokuserade på att vidareutveckla 
                           företagets befintliga medlemsprogram. Strukturen och navigationen designades om 
-                          för att göra medlemsklubben tydligare, mer lättanvänd och mer motiverande.
+                          för att göra medlemsklubben tydligare och mer motiverande att stanna kvar i.
                         </p>
                         <ul className="space-y-3 ml-4">
                           <li className="flex items-start gap-3">
                             <span className="text-primary mt-2">•</span>
-                            <span><strong className="text-foreground">Belöningssystem</strong> – Visar hur långt kunden är från nästa belöning</span>
+                            <span><strong className="text-foreground">Belöningssystem</strong>: visar hur långt kunden är från nästa belöning</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-primary mt-2">•</span>
-                            <span><strong className="text-foreground">Medlemsnivåer</strong> – Brons, silver och guld för långsiktigt engagemang</span>
+                            <span><strong className="text-foreground">Medlemsnivåer</strong>: brons, silver och guld för långsiktigt engagemang</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-primary mt-2">•</span>
-                            <span><strong className="text-foreground">Påfyllningspåminnelser</strong> – Automatiska påminnelser när det är dags att fylla på produkter</span>
+                            <span><strong className="text-foreground">Påfyllningspåminnelser</strong>: automatiska påminnelser när det är dags att fylla på produkter</span>
                           </li>
                         </ul>
                       </div>
