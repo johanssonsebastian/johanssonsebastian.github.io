@@ -739,19 +739,19 @@ const ProjectDetail = () => {
                       <ul className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Vilja utan verktyg</strong> – Unga vuxna vill knyta relationer IRL men saknar modet och verktygen att ta första steget</span>
+                          <span><strong className="text-foreground">Vilja utan verktyg</strong>: unga vuxna vill knyta relationer IRL men saknar modet och verktygen att ta första steget</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Digital trötthet</strong> – Dating-appar skapar beroende men också utmattning; allt fler söker äkta, ofiltrerad kontakt</span>
+                          <span><strong className="text-foreground">Digital trötthet</strong>: dating-appar skapar beroende men också utmattning; allt fler söker äkta, ofiltrerad kontakt</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Rädslan dominerar</strong> – Avvisningsrädsla är den största barriären, inte brist på intresse</span>
+                          <span><strong className="text-foreground">Rädslan dominerar</strong>: avvisningsrädsla är den största barriären, inte brist på intresse</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Lek sänker tröskeln</strong> – Lekfulla, odramatiska verktyg gör det skrämmande hanterbart</span>
+                          <span><strong className="text-foreground">Lek sänker tröskeln</strong>: lekfulla, odramatiska verktyg gör det skrämmande hanterbart</span>
                         </li>
                       </ul>
                     </div>
