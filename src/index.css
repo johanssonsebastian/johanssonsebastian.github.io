@@ -107,3 +107,17 @@
     box-shadow: var(--shadow-glow);
   }
 }
+
+@layer base {
+  /* Sticky header ska aldrig täcka innehåll vid ankarnavigering */
+  section[id],
+  [id] {
+    scroll-margin-top: 6.5rem;
+  }
+
+  /* Ingen horisontell scroll på små skärmar */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
