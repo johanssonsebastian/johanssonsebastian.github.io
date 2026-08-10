@@ -861,7 +861,7 @@ const ProjectDetail = () => {
                       <span className="text-primary font-body text-xs tracking-[0.3em] uppercase mb-3 block">Min roll</span>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>Jag ansvarade för strategi och beteendedesign: insiktsarbete, målgruppsanalys samt hur konceptet skulle aktiveras och mätas.</p>
-                        <p className="text-foreground italic">Platshållartext – fyll gärna på med dina exakta ansvarsområden.</p>
+                        <p className="text-foreground italic">Platshållartext: fyll gärna på med dina exakta ansvarsområden.</p>
                       </div>
                     </div>
 
@@ -871,7 +871,7 @@ const ProjectDetail = () => {
                       <h3 className="font-display text-2xl text-foreground mb-4">Ett varumärke som äger ett beteende</h3>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>
-                          Caset visar att ett godismärke kan äga ett beteende – inte bara ett smakögonblick. 
+                          Caset visar att ett godismärke kan äga ett beteende, inte bara ett smakögonblick. 
                           Genom att göra Kexchoklad till ett verktyg för första steget skapas en koppling 
                           mellan köptillfälle och social handling som går bortom traditionell reklam.
                         </p>
