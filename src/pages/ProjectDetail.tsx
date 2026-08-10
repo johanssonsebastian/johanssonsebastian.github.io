@@ -831,27 +831,27 @@ const ProjectDetail = () => {
                       <ul className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Oväntat varumärkesansvar</strong> – Från godis till social katalysator</span>
+                          <span><strong className="text-foreground">Oväntat varumärkesansvar</strong>: från godis till social katalysator</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Beteendedesign</strong> – Verktyg som sänker tröskeln för handling</span>
+                          <span><strong className="text-foreground">Beteendedesign</strong>: verktyg som sänker tröskeln för handling</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Kulturell relevans</strong> – Nostalgisk estetik möter samtida problem</span>
+                          <span><strong className="text-foreground">Kulturell relevans</strong>: nostalgisk estetik möter samtida problem</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Flerkanalig aktivering</strong> – Digital inspiration → fysisk handling</span>
+                          <span><strong className="text-foreground">Flerkanalig aktivering</strong>: digital inspiration → fysisk handling</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Skalbarhet</strong> – Från pilot till samhällsrörelse</span>
+                          <span><strong className="text-foreground">Skalbarhet</strong>: från pilot till samhällsrörelse</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="text-primary mt-1">→</span>
-                          <span><strong className="text-foreground">Långsiktig påverkan</strong> – Bidrag till folkhälsa genom mänsklig närhet</span>
+                          <span><strong className="text-foreground">Långsiktig påverkan</strong>: bidrag till folkhälsa genom mänsklig närhet</span>
                         </li>
                       </ul>
                     </div>
