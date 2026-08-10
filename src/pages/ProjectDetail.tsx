@@ -425,16 +425,16 @@ const ProjectDetail = () => {
                       <h3 className="font-display text-2xl text-foreground mb-4">Dear Future Me</h3>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>
-                          Vi utvecklade <strong className="text-foreground">Dear Future Me</strong> – ett långsiktigt, 
-                          community-drivet konstprojekt där Fotografiska vid sitt 15-årsjubileum bjuder in unga 
+                          Vi utvecklade <strong className="text-foreground">Dear Future Me</strong>, ett långsiktigt 
+                          och community-drivet konstprojekt där Fotografiska vid sitt 15-årsjubileum bjuder in unga 
                           vuxna att dokumentera sin samtid med analoga engångskameror och personliga brev.
                         </p>
                         <p>
-                          Deltagarna får i uppdrag att berätta om sig själva i 36 bilder, lämnar in sitt material 
+                          Deltagarna får i uppdrag att berätta om sig själva i 36 bilder. Materialet lämnas in 
                           via dropboxar runt om i Stockholm, och Fotografiska förvaltar innehållet som en tidskapsel.
                         </p>
                         <p className="text-foreground italic">
-                          Efter 15 år öppnas kapseln i form av en jubileumsutställning – skapad av publiken själv.
+                          Efter 15 år öppnas kapseln i form av en jubileumsutställning, skapad av publiken själv.
                         </p>
                       </div>
                     </div>
