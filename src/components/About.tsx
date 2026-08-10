@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { personalInfo, skills, tools } from "@/data/projects";
+import { personalInfo, skills } from "@/data/projects";
 
 const About = () => {
   return (
@@ -66,17 +66,6 @@ const About = () => {
                 ))}
               </div>
 
-              <h3 className="font-display text-2xl text-foreground mt-12 mb-6">Verktyg</h3>
-              <ul className="flex flex-wrap gap-3">
-                {tools.map((tool) => (
-                  <li
-                    key={tool}
-                    className="border border-primary/60 text-primary rounded-full px-4 py-2 font-body text-xs tracking-wider uppercase"
-                  >
-                    {tool}
-                  </li>
-                ))}
-              </ul>
             </div>
           </motion.div>
         </div>
