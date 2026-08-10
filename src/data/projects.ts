@@ -35,7 +35,7 @@ export const projects: Project[] = [
     client: "NTI Gymnasiet",
     role: "Growth- & mediestrategi",
     description:
-      "Ett kommunikationskoncept som gör om bilden av teknikprogrammet – från något smalt och nördigt till något man kan känna igen sig i. Byggt kring en enkel tanke: de flesta idéer blir aldrig av.",
+      "Ett kommunikationskoncept som gör om bilden av teknikprogrammet: från något smalt och nördigt till något man kan känna igen sig i. Utgångspunkten var enkel. De flesta idéer blir aldrig av.",
     image: theArchive01,
     detailImage: theArchive01,
     year: "2026",
