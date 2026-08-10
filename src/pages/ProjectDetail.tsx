@@ -725,9 +725,9 @@ const ProjectDetail = () => {
                           Samtidigt visar RFSU att nästan var fjärde svensk inte haft sex den senaste månaden.
                         </p>
                         <p>
-                          Unga vuxna vill träffas IRL – men saknar modet att ta första steget. Rädslan för avvisning, 
-                          pandemins sociala avvänjning och dating-apparnas uttröttande effekt har skapat en generation 
-                          som längtar efter närhet men inte vet hur de ska nå den.
+                          Unga vuxna vill träffas IRL, men modet att ta första steget saknas. Rädslan för 
+                          avvisning, pandemins sociala avvänjning och dating-apparnas uttröttande effekt har 
+                          skapat en generation som längtar efter närhet utan att veta hur den ska nås.
                         </p>
                       </div>
                     </div>
