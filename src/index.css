@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@layer base {
+  :root {
+    /* Navy dark background */
+    --background: 218 29% 17%;
+    --foreground: 60 21% 95%;
+
+    /* Slightly lighter navy for cards */
+    --card: 218 29% 20%;
+    --card-foreground: 60 21% 95%;
+
+    --popover: 218 29% 20%;
+    --popover-foreground: 60 21% 95%;
+
+    /* Gold accent */
+    --primary: 38 35% 58%;
+    --primary-foreground: 218 29% 17%;
+
+    /* Muted gold */
+    --secondary: 218 25% 25%;
+    --secondary-foreground: 60 21% 95%;
+
+    --muted: 218 25% 25%;
+    --muted-foreground: 38 20% 65%;
+
+    /* Gold accent */
+    --accent: 38 35% 58%;
+    --accent-foreground: 218 29% 17%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 60 21% 95%;
+
+    --border: 218 25% 28%;
+    --input: 218 25% 28%;
+    --ring: 38 35% 58%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens - Gold theme */
+    --gradient-primary: linear-gradient(135deg, hsl(38 35% 58%) 0%, hsl(38 45% 45%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(218 29% 22%) 0%, hsl(218 29% 17%) 100%);
+    --shadow-glow: 0 0 60px -15px hsl(38 35% 58% / 0.4);
+    --shadow-card: 0 25px 50px -12px hsl(218 29% 10% / 0.6);
+
+    /* Cream color for special text */
+    --cream: 60 21% 95%;
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .text-gold {
+    color: hsl(var(--primary));
+  }
+
+  .glass {
+    @apply backdrop-blur-xl border border-border/50;
+    background: hsl(var(--card) / 0.8);
+  }
+
+  .glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+
+  .hover-lift {
+    @apply transition-all duration-500 ease-out;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-glow);
+  }
+}
