@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { personalInfo, skills, tools } from "@/data/projects";
-import { Download } from "lucide-react";
 
 const About = () => {
   return (
@@ -35,16 +34,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="mt-10">
-              <a
-                href={personalInfo.cvUrl}
-                download
-                className="inline-flex items-center gap-3 border border-primary text-primary px-8 py-4 min-h-[44px] font-body text-sm tracking-wider uppercase transition-colors hover:bg-primary hover:text-primary-foreground"
-              >
-                <Download className="w-4 h-4" />
-                Ladda ner CV
-              </a>
-            </div>
+            <div className="mt-10" />
           </motion.div>
 
           {/* Right column - Skills & tools */}
