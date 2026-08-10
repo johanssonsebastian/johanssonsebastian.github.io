@@ -357,8 +357,9 @@ const ProjectDetail = () => {
                       <h3 className="font-display text-2xl text-foreground mb-4">Stärkt kundlojalitet genom bättre UX</h3>
                       <p className="text-muted-foreground font-body leading-relaxed">
                         Designen uppdaterades för att bättre matcha varumärket och ge ett mer sammanhållet 
-                        intryck. Genom förbättrad användarupplevelse, tydlig progression och smarta 
-                        påminnelser skapade vi en lösning som underlättar återköp och bygger långsiktig kundlojalitet.
+                        intryck. Med en tydligare progression i medlemsklubben och påminnelser som kommer 
+                        när produkten faktiskt är på väg att ta slut blir återköpet det enkla valet. 
+                        Lojalitet byggs i det lilla.
                       </p>
                     </div>
                   </div>
