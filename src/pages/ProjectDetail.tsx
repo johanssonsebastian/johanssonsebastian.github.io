@@ -1007,8 +1007,8 @@ const ProjectDetail = () => {
                           tanke i mobilens utkast. De flesta av dem samlar damm.
                         </p>
                         <p>
-                          The Archive gör det osynliga synligt: ett arkiv av riktiga, ofärdiga idéer från unga –
-                          och NTI som platsen där de faktiskt kan byggas. Dammet står för potential, inte för
+                          The Archive gör det osynliga synligt: ett arkiv av riktiga, ofärdiga idéer från unga, med
+                          NTI som platsen där de faktiskt kan byggas. Dammet står för potential. Inte för
                           misslyckande.
                         </p>
                       </div>
