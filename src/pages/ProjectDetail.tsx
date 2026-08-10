@@ -977,8 +977,8 @@ const ProjectDetail = () => {
                       </h2>
                       <p className="text-muted-foreground font-body leading-relaxed">
                         När vi pratade med högstadieelever handlade svaren nästan aldrig om utbildningen i sig. De
-                        handlade om självbild: "det där är inte jag". Det är där valet avgörs – långt innan någon
-                        läser en programbeskrivning.
+                        handlade om självbild: "det där är inte jag". Där avgörs valet, långt innan någon läser en
+                        programbeskrivning.
                       </p>
                     </div>
 
