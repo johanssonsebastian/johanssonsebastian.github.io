@@ -1,8 +1,33 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { projects } from "@/data/projects";
 import ProjectCard from "./ProjectCard";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "@/components/ui/carousel";
 
 const ProjectsGrid = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [selected, setSelected] = useState(0);
+  const [snaps, setSnaps] = useState<number[]>([]);
+
+  useEffect(() => {
+    if (!api) return;
+    const onSelect = () => setSelected(api.selectedScrollSnap());
+    setSnaps(api.scrollSnapList());
+    onSelect();
+    api.on("select", onSelect);
+    api.on("reInit", () => {
+      setSnaps(api.scrollSnapList());
+      onSelect();
+    });
+  }, [api]);
+
   return (
     <section id="projects" className="scroll-mt-28 py-24 md:py-32 px-6 md:px-12 lg:px-24 relative">
       {/* Section header */}
