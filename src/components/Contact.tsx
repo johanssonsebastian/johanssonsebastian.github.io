@@ -31,7 +31,7 @@ const Contact = () => {
           </h2>
 
           <p className="text-muted-foreground font-body text-base md:text-lg leading-relaxed max-w-xl mx-auto mb-10">
-            Jag söker just nu min första roll inom growth marketing – hör av dig så berättar jag mer.
+            Jag söker just nu min första roll inom growth marketing. Hör av dig så berättar jag mer.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
