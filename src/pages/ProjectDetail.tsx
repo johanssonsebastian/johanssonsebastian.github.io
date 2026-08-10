@@ -113,7 +113,7 @@ const ProjectDetail = () => {
                 <span className="text-primary">·</span>
                 <span>Min roll: {project.role}</span>
               </div>
-              )}
+
             </motion.div>
           </div>
         </div>
