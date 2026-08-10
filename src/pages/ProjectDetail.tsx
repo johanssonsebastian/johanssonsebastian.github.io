@@ -762,9 +762,9 @@ const ProjectDetail = () => {
                       <h3 className="font-display text-2xl text-foreground mb-4">Från energisnack till social katalysator</h3>
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>
-                          Vi transformerade mini-Kexchoklad från energisnack till social katalysator – ett konkret 
+                          Vi gjorde om mini-Kexchoklad från energisnack till social katalysator, ett konkret 
                           verktyg för att ta första steget. Genom att utnyttja den kulturella kopplingen till 
-                          raggningsrepliken "Tjena, kexet" skapade vi en trovärdig bro mellan varumärke och beteendeförändring.
+                          raggningsrepliken "Tjena, kexet" fick vi en trovärdig bro mellan varumärke och beteendeförändring.
                         </p>
                         <p className="text-foreground font-medium">Strategin vilar på tre pelare:</p>
                         <ul className="space-y-3 ml-4">
