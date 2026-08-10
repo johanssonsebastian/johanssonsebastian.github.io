@@ -478,12 +478,12 @@ const ProjectDetail = () => {
                       <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                         <p>
                           Konceptet fungerar som både konstprojekt och varumärkesstrategi. På kort sikt driver 
-                          det uppmärksamhet, engagemang och räckvidd kring jubileet. På lång sikt bygger det 
-                          community, publiklojalitet och ett starkt emotionellt band till Fotografiska.
+                          det uppmärksamhet och räckvidd kring jubileet. På lång sikt byggs ett community och 
+                          ett emotionellt band till Fotografiska som håller i flera år.
                         </p>
                         <p className="text-foreground italic">
-                          Caset visar hur kulturinstitutioner kan arbeta med growth och branding genom deltagande, 
-                          långsiktig storytelling och publiknära upplevelser – snarare än traditionell kampanjlogik.
+                          Caset visar hur kulturinstitutioner kan arbeta med growth och branding genom deltagande 
+                          och långsiktig storytelling, snarare än traditionell kampanjlogik.
                         </p>
                       </div>
                     </div>
