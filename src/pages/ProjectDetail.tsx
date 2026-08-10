@@ -778,7 +778,7 @@ const ProjectDetail = () => {
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-primary mt-2">•</span>
-                            <span>Placera produkten där kontakt kan – men sällan sker</span>
+                            <span>Placera produkten där kontakt kan uppstå men sällan gör det</span>
                           </li>
                         </ul>
                         <p className="mt-4">
