@@ -111,7 +111,7 @@ export const projects: Project[] = [
     client: "Kexchoklad",
     role: "Strategi & beteendedesign",
     description:
-      "När Kexchoklad blev ett verktyg mot ensamhet – ett strategiskt case om hur en godisprodukt kan bidra till folkhälsan.",
+      "När Kexchoklad blev ett verktyg mot ensamhet. Ett strategiskt case om hur en godisprodukt kan bidra till folkhälsan.",
     image: kexchokladCover,
     year: "2025",
     tags: ["Strategy", "Public Health", "Behavior Design"],
